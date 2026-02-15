@@ -89,7 +89,6 @@ Created fishing report system that intelligently aggregates data from 6 differen
 ## 📫 Get In Touch
 
 - **GitHub:** [@seang1121](https://github.com/seang1121)
-- **Email:** seangoudy1121@gmail.com
 
 ---
 
