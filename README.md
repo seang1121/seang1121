@@ -9,11 +9,34 @@ I specialize in creating practical applications that aggregate data from multipl
 ## 🚀 What I Build
 
 ### 🏀 AI Sports Betting Analyzer
-Multi-sport statistical analysis system with machine learning capabilities
+Multi-sport statistical analysis system with machine learning capabilities and multi-user pick tracking.
 - **Tech:** Python, Flask, SQLite, Machine Learning
-- **Features:** 11+ factor analysis, sport-siloed learning, confidence calibration
-- **Sports:** NBA, NHL, NCAAB
+- **Sports:** NBA (18-stat model), NHL (18-stat model), NCAAB (KenPom/efficiency-based)
+- **Features:**
+  - Sport-siloed weighted learning — NBA, NHL, NCAAB each learn independently from their own outcomes
+  - Multi-user leaderboard with 30-day rolling performance windows
+  - Unified AI Picks page — scan games, log picks, track results in one workflow
+  - AP Poll auto-refresh scheduler (5am EST daily)
+  - Auto-scan scheduler (10am / 2pm / 6pm / 10pm EST)
+  - Confidence calibration with stat attribution tracking
+  - Shadow picks system — learns from all games, not just logged picks
+  - Covers.com injury integration for NBA, NHL, NCAAB
+  - Custom domain: [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com) *(launching soon)*
 - **Status:** Private (proprietary algorithms)
+
+### 🏈 NCAAB March Madness Trend Analysis
+6-year research report (2019–2025) covering every round of the NCAA Tournament — R64 through champion.
+- **Primary focus:** Why teams win and advance at each stage (statistical + efficiency analysis)
+- **Coverage:** R64/R32, Sweet 16, Elite 8, Final Four — one deep-dive file per round + complete combined doc
+- **Key findings:**
+  - R32→Sweet 16 is the steepest efficiency cliff in the bracket (AdjEM +14 → +22+)
+  - AdjD top 40 is the floor for any sustained run — without it teams exit in R32
+  - KenPom inversions (lower seed outranks higher) = 60%+ outright win rate
+  - Three Cinderella archetypes with distinct depth ceilings (Defense-first / Balanced / Offense-first)
+  - Champion gate: KenPom top 6 + AdjO top 25 + AdjD top 25 — unbroken in the KenPom era
+  - Extreme Team flag (top-10 one metric, outside top-50 other) = 0 championships in 22 years
+- **ATS/Betting appendix** included in each file (labeled separately from analytical content)
+- [View Repository →](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis)
 
 ### 🎣 Fishing Report Analyzer
 Comprehensive fishing conditions aggregator for Mayport, Jacksonville, FL
@@ -40,16 +63,22 @@ Daily mortgage rate monitoring with historical analysis
 
 **Frameworks & Libraries:**
 - Flask (Web Applications)
-- BeautifulSoup (Web Scraping)
 - SQLite (Database)
-- Requests (API Integration)
+- BeautifulSoup (Web Scraping)
+- Requests / httpx (API Integration)
+
+**Infrastructure:**
+- Cloudflare Tunnel + custom domain routing
+- ngrok (tunneling)
+- Scheduled task automation (Windows Task Scheduler)
 
 **Specialties:**
-- Data aggregation from multiple sources
-- Real-time API integration
-- Statistical analysis & machine learning
-- Web scraping & data extraction
-- Automated reporting systems
+- Sport-siloed machine learning with weighted stat attribution
+- Multi-user collaborative learning systems
+- Real-time odds + injury data integration (The Odds API, Covers.com)
+- KenPom / efficiency-based tournament modeling
+- Data aggregation from multiple live sources
+- Automated scheduling and reporting
 
 ---
 
@@ -57,32 +86,36 @@ Daily mortgage rate monitoring with historical analysis
 
 I'm passionate about **data-driven decision making**. My projects share a common thread:
 
-✅ **Multi-Source Aggregation** - Why rely on one source when you can combine many?
-✅ **Historical Tracking** - Trends matter more than snapshots
-✅ **Practical Applications** - Build tools that solve real problems
-✅ **Clean Code** - Professional structure, documentation, and best practices
+✅ **Multi-Source Aggregation** — Why rely on one source when you can combine many?
+✅ **Historical Tracking** — Trends matter more than snapshots
+✅ **Why Things Happen** — Not just what the data says, but why teams win, why markets misprice, why patterns hold
+✅ **Practical Applications** — Build tools that solve real problems
+✅ **Clean Architecture** — Sport-siloed learning, singleton database patterns, no cross-contamination
 
 ---
 
 ## 📊 Current Focus
 
-- Building intelligent data aggregation systems
-- Exploring machine learning applications in sports analytics
-- Developing automated monitoring and alerting tools
-- Creating user-friendly interfaces for complex data
+- Launching [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com) on a custom domain via Cloudflare Tunnel
+- Adding MLB support to the betting analyzer (target: Opening Day 2026)
+- Expanding NCAAB research to include 2026 tournament data as it happens
+- Refining multi-user weighted learning as more pick history accumulates (target: 75-100 picks per sport)
 
 ---
 
 ## 🌟 Highlighted Work
 
 ### Sport-Siloed Machine Learning
-Developed independent learning algorithms for each sport (NBA, NHL, NCAAB) to prevent cross-contamination of statistical models. Each sport learns from its own outcomes, optimizing weights based on proven performance.
+Each sport (NBA, NHL, NCAAB) maintains its own independent learning weights — NBA injuries mean something different than NHL goalie injuries. Stat attributions track which of 18 factors contributed to each pick outcome, and weights adjust automatically after every resolve cycle.
 
 ### Multi-User Weighted Learning
-Built collaborative learning system where multiple users contribute to AI improvement, with proven performers weighted more heavily in the learning algorithm.
+Collaborative pick tracking where proven performers (admin users) are weighted 65% vs 35% for standard users. 30-day rolling leaderboard surfaces recent performance rather than all-time records.
+
+### NCAAB Tournament Research (2019–2025)
+Built a 4-file research system covering every round with a consistent dual-purpose structure: statistical analysis of *why teams win* is the primary content (efficiency cliffs, Cinderella archetypes, favorite warning signs), with ATS/betting data in clearly labeled appendix sections.
 
 ### 6-Source Data Fusion
-Created fishing report system that intelligently aggregates data from 6 different professional sources, combining tide predictions, weather data, injury reports, and solunar forecasts into a single actionable report.
+Fishing report system that intelligently aggregates data from 6 professional sources — tide predictions, weather, injury reports, and solunar forecasts — into a single actionable report.
 
 ---
 
