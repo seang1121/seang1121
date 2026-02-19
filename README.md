@@ -21,13 +21,14 @@ Multi-sport statistical analysis system with machine learning capabilities and m
   - Confidence calibration with stat attribution tracking
   - Shadow picks system — learns from all games, not just logged picks
   - Covers.com injury integration for NBA, NHL, NCAAB
-  - Custom domain: [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com) *(launching soon)*
+  - Live at [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com)
 - **Status:** Private (proprietary algorithms)
 
 ### 🏈 NCAAB March Madness Trend Analysis
 6-year research report (2019–2025) covering every round of the NCAA Tournament — R64 through champion.
 - **Primary focus:** Why teams win and advance at each stage (statistical + efficiency analysis)
-- **Coverage:** R64/R32, Sweet 16, Elite 8, Final Four — one deep-dive file per round + complete combined doc
+- **Coverage:** Full year-by-year game results for all 192 R64 games and all 96 R32 games, plus Sweet 16 / Elite 8 / Final Four / Championship deep dives — one file per round + complete combined doc
+- **GitHub Pages site:** [seang1121.github.io/ncaab-MarchMadness-Trend-analysis](https://seang1121.github.io/ncaab-MarchMadness-Trend-analysis/)
 - **Key findings:**
   - R32→Sweet 16 is the steepest efficiency cliff in the bracket (AdjEM +14 → +22+)
   - AdjD top 40 is the floor for any sustained run — without it teams exit in R32
@@ -69,7 +70,7 @@ Daily mortgage rate monitoring with historical analysis
 
 **Infrastructure:**
 - Cloudflare Tunnel + custom domain routing
-- ngrok (tunneling)
+- GitHub Pages (static research sites)
 - Scheduled task automation (Windows Task Scheduler)
 
 **Specialties:**
@@ -96,7 +97,6 @@ I'm passionate about **data-driven decision making**. My projects share a common
 
 ## 📊 Current Focus
 
-- Launching [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com) on a custom domain via Cloudflare Tunnel
 - Adding MLB support to the betting analyzer (target: Opening Day 2026)
 - Expanding NCAAB research to include 2026 tournament data as it happens
 - Refining multi-user weighted learning as more pick history accumulates (target: 75-100 picks per sport)
@@ -112,7 +112,7 @@ Each sport (NBA, NHL, NCAAB) maintains its own independent learning weights — 
 Collaborative pick tracking where proven performers (admin users) are weighted 65% vs 35% for standard users. 30-day rolling leaderboard surfaces recent performance rather than all-time records.
 
 ### NCAAB Tournament Research (2019–2025)
-Built a 4-file research system covering every round with a consistent dual-purpose structure: statistical analysis of *why teams win* is the primary content (efficiency cliffs, Cinderella archetypes, favorite warning signs), with ATS/betting data in clearly labeled appendix sections.
+A 4-file research system covering every round — including full year-by-year game tables for all 192 R64 games and 96 R32 games. Each file follows the same dual-purpose structure: statistical analysis of *why teams win* is primary content (efficiency cliffs, Cinderella archetypes, favorite warning signs), with ATS/betting data in clearly labeled appendix sections. Includes a live [GitHub Pages site](https://seang1121.github.io/ncaab-MarchMadness-Trend-analysis/) with visual efficiency staircase, upset tracker, and champion profiles.
 
 ### 6-Source Data Fusion
 Fishing report system that intelligently aggregates data from 6 professional sources — tide predictions, weather, injury reports, and solunar forecasts — into a single actionable report.
