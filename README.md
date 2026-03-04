@@ -1,133 +1,126 @@
 # Hi, I'm Sean 👋
 
-**Data enthusiast building tools that turn information into insights**
+**Builder of data-driven tools that turn raw information into smarter decisions**
 
-I specialize in creating practical applications that aggregate data from multiple sources, analyze trends, and provide actionable intelligence. Whether it's sports analytics, fishing conditions, or financial markets, I believe in making smart decisions backed by real data.
+I build practical applications that aggregate data from multiple sources, detect patterns, and surface actionable insights — whether it's sports analytics, personal finance, or local fishing conditions. Python-first, automation-heavy, and always backed by real data.
 
 ---
 
 ## 🚀 What I Build
 
 ### 🏀 AI Sports Betting Analyzer
-Multi-sport statistical analysis system with machine learning capabilities and multi-user pick tracking.
-- **Tech:** Python, Flask, SQLite, Machine Learning
-- **Sports:** NBA (18-stat model), NHL (18-stat model), NCAAB (KenPom/efficiency-based)
-- **Features:**
-  - Sport-siloed weighted learning — NBA, NHL, NCAAB each learn independently from their own outcomes
-  - Multi-user leaderboard with 30-day rolling performance windows
-  - Unified AI Picks page — scan games, log picks, track results in one workflow
-  - AP Poll auto-refresh scheduler (5am EST daily)
-  - Auto-scan scheduler (10am / 2pm / 6pm / 10pm EST)
-  - Confidence calibration with stat attribution tracking
-  - Shadow picks system — learns from all games, not just logged picks
-  - Covers.com injury integration for NBA, NHL, NCAAB
+Full-stack AI betting platform with an 11-agent analysis pipeline, per-sport ML models, and multi-user pick tracking.
+- **Tech:** Python, Flask, SQLite (WAL), scikit-learn, APScheduler, Cloudflare Tunnel
+- **Sports:** NBA (16 stats) · NHL (18 stats) · NCAAB (18 stats) · MLB (28 stats — Opening Day 2026)
+- **Highlights:**
+  - 11-agent pipeline (line movement, injury intelligence, trends, ML learning, consensus, narrative, and more)
+  - Sport-siloed ML models — each sport trains independently, no cross-contamination
+  - Dual-signal totals model (raw scoring + defense-adjusted) for Over/Under direction
+  - Independent bet direction — spread, ML, and totals each compute separately
+  - Shadow picks system — learns from all games, not just logged ones
+  - Multi-user leaderboard with 30-day rolling window and H2H matchups
+  - Auto-resolve scheduler (9:30pm + 3am EST), auto-scan (10am/2pm/6pm/10pm EST)
+  - Nimrod — automated bet slip generator + Twitter/X posting agent
+  - Real-time injury + ATS data from Covers.com
+  - 6-key API rotation with auto-failover
   - Live at [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com)
-- **Status:** Private (proprietary algorithms)
+- **Status:** Private repo (proprietary model)
 
 ### 🏈 NCAAB March Madness Trend Analysis
-6-year research report (2019–2025) covering every round of the NCAA Tournament — R64 through champion.
-- **Primary focus:** Why teams win and advance at each stage (statistical + efficiency analysis)
-- **Coverage:** Full year-by-year game results for all 192 R64 games and all 96 R32 games, plus Sweet 16 / Elite 8 / Final Four / Championship deep dives — one file per round + complete combined doc
-- **GitHub Pages site:** [seang1121.github.io/ncaab-MarchMadness-Trend-analysis](https://seang1121.github.io/ncaab-MarchMadness-Trend-analysis/)
+6-year deep dive (2019–2025) into why teams win at every round of the NCAA Tournament.
+- **Coverage:** All 192 R64 games, 96 R32 games, Sweet 16, Elite 8, Final Four, and Championship
 - **Key findings:**
-  - R32→Sweet 16 is the steepest efficiency cliff in the bracket (AdjEM +14 → +22+)
-  - AdjD top 40 is the floor for any sustained run — without it teams exit in R32
-  - KenPom inversions (lower seed outranks higher) = 60%+ outright win rate
-  - Three Cinderella archetypes with distinct depth ceilings (Defense-first / Balanced / Offense-first)
+  - The "Efficiency Staircase" — each round has a distinct AdjEM floor teams must clear
+  - R32→Sweet 16 is the steepest cliff in the bracket (+14 → +22+ AdjEM)
   - Champion gate: KenPom top 6 + AdjO top 25 + AdjD top 25 — unbroken in the KenPom era
-  - Extreme Team flag (top-10 one metric, outside top-50 other) = 0 championships in 22 years
-- **ATS/Betting appendix** included in each file (labeled separately from analytical content)
+  - "Extreme Teams" (elite one dimension, weak the other) = 0 championships in 22 years
+  - Three Cinderella archetypes with distinct depth ceilings
+- **Live site:** [seang1121.github.io/ncaab-MarchMadness-Trend-analysis](https://seang1121.github.io/ncaab-MarchMadness-Trend-analysis/)
 - [View Repository →](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis)
 
-### 🎣 Fishing Report Analyzer
-Comprehensive fishing conditions aggregator for Mayport, Jacksonville, FL
-- **Tech:** Python, Web Scraping, API Integration
-- **Sources:** 6 professional data sources (NOAA, Tides4Fishing, ProAngler, etc.)
-- **Features:** Live buoy data, tide predictions, solunar forecasts
-- [View Repository →](https://github.com/seang1121/Fishing-Report-Analyzer)
+### 💰 Fidelity Fund Analyzer
+Portfolio strategy comparison tool across 30+ Fidelity mutual funds and ETFs.
+- **Tech:** Python, GitHub Pages, GitHub Actions (auto-generates weekly reports)
+- **Strategies:** 6 tiers from Conservative (5-7%) through Moonshot (60-150%+)
+- **Features:** 1-year projections, risk profiles, rebalancing guides, DCA implementation plans, tax efficiency guidance
+- **Live site:** [seang1121.github.io/Fidelity-Fund-Analyzer](https://seang1121.github.io/Fidelity-Fund-Analyzer/Fidelity-Fund-Analyzer/)
+- [View Repository →](https://github.com/seang1121/Fidelity-Fund-Analyzer)
+
+### 🏦 CD Ladder Analyzer
+CD ladder simulator comparing rates, strategies, and institutions to maximize savings yield.
+- **Tech:** Python, GitHub Pages
+- **Institutions:** Pentagon Federal, Navy Federal, Connexus, Vanguard, Ally, Marcus
+- **Strategies:** 3-Rung Short, 5-Rung Classic, 5-Rung Staggered, Barbell
+- **Features:** Maturity schedules, projected interest earned, liquidity timelines
+- **Live site:** [seang1121.github.io/CD-Ladder-Analyzer](https://seang1121.github.io/CD-Ladder-Analyzer/)
+- [View Repository →](https://github.com/seang1121/CD-Ladder-Analyzer)
+
+### 📝 Loan Officer Exam Prep Study Guide
+Self-contained NMLS SAFE MLO exam study course with structured learning across 4 modes.
+- **Modes:** Topic deep dives, flashcards, quizzes, full practice exams
+- **Coverage:** All 5 exam categories — Loan Origination (27%), Federal Laws (24%), Ethics (18%), General Knowledge (20%), State Content (11%)
+- **Features:** 7-week study plan, 16 sessions, critical threshold reference tables, law-to-regulation mapping
+- [View Repository →](https://github.com/seang1121/Loan-Officer-Exam-Prep-Study-Guide)
 
 ### 🏠 Mortgage Interest Rate Tracker
-Daily mortgage rate monitoring with historical analysis
-- **Tech:** Python, JSON Database, Bankrate API
-- **Features:** Day-to-day comparison, 7-day trends, automated tracking
-- **Use Case:** Rate shopping, refinance monitoring, market analysis
+Daily mortgage rate monitor with historical analysis and trend detection.
+- **Tech:** Python, Bankrate API + Chase scraper fallback, JSON storage
+- **Features:** Day-to-day comparison, 7-day trends with directional indicators, configurable alert thresholds
+- **Use case:** Rate shopping, refinance timing, market analysis
 - [View Repository →](https://github.com/seang1121/Mortgage-Interest-Rate-Lookup)
+
+### 🎣 Fishing Report Analyzer
+6-source fishing conditions aggregator for Mayport, Jacksonville, FL.
+- **Tech:** Python, BeautifulSoup, NOAA API
+- **Sources:** ProAngler, FishingBooker, Tides4Fishing, NOAA Buoy MYPF1, TideTime
+- **Features:** Live buoy data, tide predictions, solunar forecasts, water temp, wind conditions
+- [View Repository →](https://github.com/seang1121/Fishing-Report-Analyzer)
 
 ---
 
 ## 💻 Tech Stack
 
-**Languages:**
-- Python (Primary)
-- JavaScript
-- SQL
-
-**Frameworks & Libraries:**
-- Flask (Web Applications)
-- SQLite (Database)
-- BeautifulSoup (Web Scraping)
-- Requests / httpx (API Integration)
-
-**Infrastructure:**
-- Cloudflare Tunnel + custom domain routing
-- GitHub Pages (static research sites)
-- Scheduled task automation (Windows Task Scheduler)
-
-**Specialties:**
-- Sport-siloed machine learning with weighted stat attribution
-- Multi-user collaborative learning systems
-- Real-time odds + injury data integration (The Odds API, Covers.com)
-- KenPom / efficiency-based tournament modeling
-- Data aggregation from multiple live sources
-- Automated scheduling and reporting
+| Category | Tools |
+|----------|-------|
+| **Languages** | Python (primary), JavaScript, SQL |
+| **Backend** | Flask, SQLite (WAL mode), APScheduler |
+| **ML/AI** | scikit-learn, multi-agent pipelines, sport-siloed models |
+| **Scraping** | BeautifulSoup, Requests, lxml |
+| **Frontend** | Jinja2, HTML/CSS/JS, GitHub Pages |
+| **Infrastructure** | Cloudflare Tunnel, GitHub Actions CI/CD, Windows Task Scheduler |
+| **APIs** | The Odds API, NOAA, Bankrate, Twitter/X, Covers.com |
 
 ---
 
 ## 🎯 What Drives Me
 
-I'm passionate about **data-driven decision making**. My projects share a common thread:
+**Multi-source aggregation** — one source is a data point, six sources is intelligence
 
-✅ **Multi-Source Aggregation** — Why rely on one source when you can combine many?
-✅ **Historical Tracking** — Trends matter more than snapshots
-✅ **Why Things Happen** — Not just what the data says, but why teams win, why markets misprice, why patterns hold
-✅ **Practical Applications** — Build tools that solve real problems
-✅ **Clean Architecture** — Sport-siloed learning, singleton database patterns, no cross-contamination
+**Pattern recognition** — trends matter more than snapshots; why things happen matters more than what happened
+
+**Practical tools** — everything I build solves a real problem I actually have
+
+**Clean architecture** — sport-siloed learning, singleton DB patterns, no cross-contamination, automated scheduling
 
 ---
 
 ## 📊 Current Focus
 
-- Adding MLB support to the betting analyzer (target: Opening Day 2026)
-- Expanding NCAAB research to include 2026 tournament data as it happens
-- Refining multi-user weighted learning as more pick history accumulates (target: 75-100 picks per sport)
-
----
-
-## 🌟 Highlighted Work
-
-### Sport-Siloed Machine Learning
-Each sport (NBA, NHL, NCAAB) maintains its own independent learning weights — NBA injuries mean something different than NHL goalie injuries. Stat attributions track which of 18 factors contributed to each pick outcome, and weights adjust automatically after every resolve cycle.
-
-### Multi-User Weighted Learning
-Collaborative pick tracking where proven performers (admin users) are weighted 65% vs 35% for standard users. 30-day rolling leaderboard surfaces recent performance rather than all-time records.
-
-### NCAAB Tournament Research (2019–2025)
-A 4-file research system covering every round — including full year-by-year game tables for all 192 R64 games and 96 R32 games. Each file follows the same dual-purpose structure: statistical analysis of *why teams win* is primary content (efficiency cliffs, Cinderella archetypes, favorite warning signs), with ATS/betting data in clearly labeled appendix sections. Includes a live [GitHub Pages site](https://seang1121.github.io/ncaab-MarchMadness-Trend-analysis/) with visual efficiency staircase, upset tracker, and champion profiles.
-
-### 6-Source Data Fusion
-Fishing report system that intelligently aggregates data from 6 professional sources — tide predictions, weather, injury reports, and solunar forecasts — into a single actionable report.
-
----
-
-## 📫 Get In Touch
-
-- **GitHub:** [@seang1121](https://github.com/seang1121)
+- Adding MLB to the betting analyzer (28-stat pitcher-first model, target: Opening Day 2026)
+- Expanding NCAAB research with 2026 tournament data as it happens
+- Refining multi-user weighted ML as pick history grows (75-100+ picks per sport)
 
 ---
 
 ## 📈 GitHub Stats
 
 ![Sean's GitHub Stats](https://github-readme-stats.vercel.app/api?username=seang1121&show_icons=true&theme=dark)
+
+---
+
+## 📫 Get In Touch
+
+- **GitHub:** [@seang1121](https://github.com/seang1121)
 
 ---
 
