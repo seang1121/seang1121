@@ -18,7 +18,7 @@ Everything I build connects back to one place — the **Developer Command Center
 | Active Projects | 28 |
 | Languages | 8 |
 
-Claude is the engine. Every agent, every automation, every pipeline flows through Claude-powered orchestration.
+Fully automated orchestration — every agent, every pipeline, every report runs without manual intervention.
 
 ![Private](https://img.shields.io/badge/repo-private-gray)
 
@@ -47,7 +47,7 @@ Trading bot for Polymarket. Sportsbook odds signals feed a Kelly criterion posit
 `Python` `Flask` `SQLite` `SQL` · ![Private](https://img.shields.io/badge/repo-private-gray)
 
 ### OpenClaw Bot — *15 cron jobs, 7 agents, fully autonomous*
-Multi-layer AI automation: browser automation, ML pick filtering, Moltbook publishing, competitive intelligence scraping. Drives Discord, Telegram, and Moltbook channels. Claude Sonnet 4.6 as the primary model. PM2-managed process orchestration.
+Multi-layer automation system: browser automation, ML pick filtering, Moltbook publishing, competitive intelligence scraping. Drives Discord, Telegram, and Moltbook channels. PM2-managed process orchestration.
 
 `Node.js` `Python` `JavaScript` `Discord.js` `PM2` · ![Private](https://img.shields.io/badge/repo-private-gray)
 
@@ -75,7 +75,7 @@ Official Docker MCP registry contributor. Infrastructure for discovering and dis
 | **NCAAB Sweet 16 Analysis** | Deep tournament matchup modeling | Python | [Repo](https://github.com/seang1121/ncaab-sweet16-analysis) |
 | **NVDA Stock Explorer** | NVIDIA technicals, earnings impact modeling | Python | [Repo](https://github.com/seang1121/nvda) |
 | **Sportsipy** | Multi-sport stats scraping library | Python | [Repo](https://github.com/seang1121/sportsipy) |
-| **Sports Betting MCP** | MCP server — AI predictions for Claude | Python, MCP | [Repo](https://github.com/seang1121/sports-betting-mcp) |
+| **Sports Betting MCP** | MCP server — exposes predictions to AI agents | Python, MCP | [Repo](https://github.com/seang1121/sports-betting-mcp) |
 
 </details>
 
@@ -142,10 +142,10 @@ HTML/CSS       ██████                   Landing pages, dashboards, w
 ```
 
 **Frameworks:** Flask · FastAPI · React · Next.js · Discord.js
-**AI/ML:** Claude API · scikit-learn · MCP Protocol · Multi-agent systems
+**AI/ML:** scikit-learn · MCP Protocol · Multi-agent systems · LLM integration
 **Data:** SQLite · yfinance · NOAA APIs · Polymarket CLOB API · Web scraping
 **Infrastructure:** PM2 · Cloudflare Tunnel · Vite · GitHub Actions · Docker
-**Ecosystem:** Google Developer · MCP Protocol contributor · Claude Code power user
+**Ecosystem:** Google Developer · MCP Protocol contributor
 
 ---
 
