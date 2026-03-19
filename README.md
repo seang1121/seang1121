@@ -15,8 +15,8 @@ Everything I build connects back to one place — the **Developer Command Center
 | AI Agents | 32 |
 | Cron Jobs | 15 |
 | Schedulers | 11 |
-| Active Projects | 21 |
-| Languages | 6 |
+| Active Projects | 28 |
+| Languages | 8 |
 
 Claude is the engine. Every agent, every automation, every pipeline flows through Claude-powered orchestration.
 
@@ -51,6 +51,16 @@ Multi-layer AI automation: browser automation, ML pick filtering, Moltbook publi
 
 `Node.js` `Python` `JavaScript` `Discord.js` `PM2` · ![Private](https://img.shields.io/badge/repo-private-gray)
 
+### Google Workspace CLI — *Rust, Google Developer*
+Google Workspace command-line tool — one CLI for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills. Contributing to the official Google Workspace ecosystem.
+
+`Rust` · [View Repo →](https://github.com/seang1121/cli)
+
+### Docker MCP Registry — *Go*
+Official Docker MCP registry contributor. Infrastructure for discovering and distributing Model Context Protocol servers across the ecosystem.
+
+`Go` · [View Repo →](https://github.com/seang1121/mcp-registry)
+
 ---
 
 ## Full Project Index
@@ -69,13 +79,15 @@ Multi-layer AI automation: browser automation, ML pick filtering, Moltbook publi
 
 </details>
 
-<details><summary><strong>Finance (3 projects)</strong></summary>
+<details><summary><strong>Finance (5 projects)</strong></summary>
 
 | Project | What It Does | Stack | Link |
 |---------|-------------|-------|------|
 | **Investment Command Center** | 12 AI analyzers, Monte Carlo, Markowitz optimizer | Python, FastAPI, Next.js, TypeScript | [Repo](https://github.com/seang1121/investment-command-center) |
 | **Fidelity Fund Analyzer** | Mutual fund comparison, expense optimization | Python | [Repo](https://github.com/seang1121/Fidelity-Fund-Analyzer) |
 | **Mortgage Rate Tracker** | Daily rate monitoring, lender comparison | Python | [Repo](https://github.com/seang1121/Mortgage-Interest-Rate-Lookup) |
+| **CD Ladder Analyzer** | CD rate comparison and ladder strategy simulator | HTML, JavaScript | [Repo](https://github.com/seang1121/CD-Ladder-Analyzer) |
+| **Loan Officer Exam Prep** | NMLS SAFE MLO exam study course and prep guide | HTML | [Repo](https://github.com/seang1121/Loan-Officer-Exam-Prep-Study-Guide) |
 
 </details>
 
@@ -89,15 +101,18 @@ Multi-layer AI automation: browser automation, ML pick filtering, Moltbook publi
 
 </details>
 
-<details><summary><strong>Developer Tools (5 projects)</strong></summary>
+<details><summary><strong>Developer Tools (8 projects)</strong></summary>
 
 | Project | What It Does | Stack | Link |
 |---------|-------------|-------|------|
-| **Claude Code CLI Skills** | 107 custom slash commands for dev workflows | Markdown, Shell | [Repo](https://github.com/seang1121/cli) |
-| **Agent Academy** | Multi-agent orchestration, 5 reference agents | Python | [Repo](https://github.com/seang1121/agent-academy) |
+| **Google Workspace CLI** | One CLI for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin | Rust | [Repo](https://github.com/seang1121/cli) |
+| **Docker MCP Registry** | Official MCP server discovery and distribution | Go | [Repo](https://github.com/seang1121/mcp-registry) |
+| **MCP Servers** | Model Context Protocol server implementations | TypeScript | [Repo](https://github.com/seang1121/servers) |
+| **Agent Academy** | Multi-agent orchestration, 5 reference agents | PowerShell | [Repo](https://github.com/seang1121/agent-academy) |
+| **DAAV** | Developer Automation Agent Visualizer | TypeScript | [Repo](https://github.com/seang1121/developer-automation-agent-visualizer) |
+| **ACC** | Agent Command Center — self-configuring dashboard | TypeScript | [Repo](https://github.com/seang1121/acc-agent-command-center) |
 | **Awesome MCP Servers** | Curated community MCP server list | Markdown | [Repo](https://github.com/seang1121/awesome-mcp-servers) |
 | **Fixer GitHub** | Automated repo cleanup and maintenance | Python | Private |
-| **GWS CLI Explorer** | Google Workspace CLI tool | Python | [Repo](https://github.com/seang1121/gws-cli-explore) |
 
 </details>
 
@@ -118,16 +133,19 @@ Multi-layer AI automation: browser automation, ML pick filtering, Moltbook publi
 ```
 Python         ████████████████████████  Primary — Flask, FastAPI, scikit-learn, scrapers
 TypeScript     ████████████████         React, Next.js, Node.js, Vite
+Rust           ████████████             Google Workspace CLI, systems programming
 JavaScript     ████████████             Discord.js, browser automation, PM2
 SQL            ████████████             SQLite across every major project
+Go             ████████                 Docker MCP Registry, infrastructure
 Shell/Bash     ████████                 Automation scripts, schedulers, CI
-HTML/CSS       ██████                   Landing pages, dashboards
+HTML/CSS       ██████                   Landing pages, dashboards, web apps
 ```
 
 **Frameworks:** Flask · FastAPI · React · Next.js · Discord.js
 **AI/ML:** Claude API · scikit-learn · MCP Protocol · Multi-agent systems
 **Data:** SQLite · yfinance · NOAA APIs · Polymarket CLOB API · Web scraping
-**Infrastructure:** PM2 · Cloudflare Tunnel · Vite · GitHub Actions · Turbopack
+**Infrastructure:** PM2 · Cloudflare Tunnel · Vite · GitHub Actions · Docker
+**Ecosystem:** Google Developer · MCP Protocol contributor · Claude Code power user
 
 ---
 
@@ -139,7 +157,9 @@ HTML/CSS       ██████                   Landing pages, dashboards
 
 **I build end-to-end.** From scraping raw data to training models to deploying dashboards to monitoring with alerts. Every project is a complete system, not a script.
 
-**Scale:** 21 active projects · 6 languages · 32 agents · 15 cron jobs · 11 schedulers · 107 CLI skills · 8 API integrations
+**Multi-language.** Python, TypeScript, Rust, Go, JavaScript, SQL — I pick the right tool for the job. Contributing to the Google Workspace CLI (Rust) and Docker MCP Registry (Go).
+
+**Scale:** 28 projects · 8 languages · 32 agents · 15 cron jobs · 11 schedulers · 107 CLI skills · 8 API integrations
 
 ---
 
