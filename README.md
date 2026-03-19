@@ -1,6 +1,6 @@
 # Sean Goudy
 
-**Self-taught engineer. Started coding recently. Now operating 32 AI agents, 15 cron jobs, and 11 schedulers — all running 24/7 with zero manual intervention.**
+**Self-taught engineer. Started coding recently. Now operating 21+ automation agents, 18 cron jobs, and 12 schedulers — all running 24/7 with zero manual intervention.**
 
 I don't just write code — I build systems that make decisions, execute trades, publish reports, and learn from outcomes while I sleep. Every project ships. Every system runs in production.
 
@@ -12,10 +12,10 @@ Everything I build connects back to one place — the **Developer Command Center
 
 | Metric | Count |
 |--------|-------|
-| AI Agents | 32 |
-| Cron Jobs | 15 |
-| Schedulers | 11 |
-| Active Projects | 28 |
+| Automation Agents | 21+ |
+| Cron Jobs | 18 |
+| Schedulers | 12 |
+| Active Projects | 26 |
 | Languages | 8 |
 
 Fully automated orchestration — every agent, every pipeline, every report runs without manual intervention.
@@ -26,12 +26,12 @@ Fully automated orchestration — every agent, every pipeline, every report runs
 
 ## What I Ship
 
-### AI Sports Betting Analyzer — *14 agents, 11 schedulers, live 24/7*
+### AI Sports Betting Analyzer — *11 agents, 12 schedulers, live 24/7*
 Multi-sport ML prediction platform covering NBA, NHL, and NCAAB. Sport-siloed learning algorithms prevent cross-contamination between models. Multi-user weighted feedback — proven performers influence the AI more. Confidence calibration, automated Discord reporting, Cloudflare tunnel to production.
 
 `Python` `Flask` `SQLite` `scikit-learn` `SQL` · ![Private](https://img.shields.io/badge/repo-private-gray)
 
-### Investment Command Center — *12 AI analyzers*
+### Investment Command Center — *10 analyzers*
 Full-stack investment intelligence. Monte Carlo simulation (10k paths), Markowitz portfolio optimization, Gordon Growth valuation, 5 stock/fund scanners, risk analysis, proactive advisor, financial health scoring. Weekly automated reports via GitHub Actions.
 
 `Python` `FastAPI` `Next.js` `TypeScript` `SQL` · [View Repo →](https://github.com/seang1121/investment-command-center)
@@ -39,14 +39,14 @@ Full-stack investment intelligence. Monte Carlo simulation (10k paths), Markowit
 ### March Madness Bracket Predictor — *77% accuracy, 14-year backtest*
 5 independent prediction models combined into a calibrated ensemble. KenPom efficiency, defensive identity, market intelligence, tempo/matchup analysis, and historical seed patterns. 18 CLI commands, Monte Carlo simulation, champion-diversified bracket strategy for 2026.
 
-`TypeScript` `Node.js` · [View Repo →](https://github.com/seang1121/march-madness)
+`TypeScript` `Node.js` · [View Repo →](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis)
 
 ### Henchmen Trader — *Polymarket prediction markets*
 Trading bot for Polymarket. Sportsbook odds signals feed a Kelly criterion position sizer with hard risk limits (20% max daily loss, 10% max position, 30% drawdown halt). Dead market sniper for mispriced contracts. Paper trading pipeline with live execution ready.
 
 `Python` `Flask` `SQLite` `SQL` · ![Private](https://img.shields.io/badge/repo-private-gray)
 
-### OpenClaw Bot — *15 cron jobs, 7 agents, fully autonomous*
+### OpenClaw Bot — *18 cron jobs, fully autonomous*
 Multi-layer automation system: browser automation, ML pick filtering, Moltbook publishing, competitive intelligence scraping. Drives Discord, Telegram, and Moltbook channels. PM2-managed process orchestration.
 
 `Node.js` `Python` `JavaScript` `Discord.js` `PM2` · ![Private](https://img.shields.io/badge/repo-private-gray)
@@ -69,11 +69,11 @@ Official Docker MCP registry contributor. Infrastructure for discovering and dis
 
 | Project | What It Does | Stack | Link |
 |---------|-------------|-------|------|
-| **AI Sports Betting Analyzer** | ML predictions across NBA, NHL, NCAAB — 14 agents | Python, Flask, SQLite, scikit-learn | Private |
-| **March Madness Predictor** | 5-model ensemble, 77% accuracy, 18 CLI commands | TypeScript, Node.js | [Repo](https://github.com/seang1121/march-madness) |
+| **AI Sports Betting Analyzer** | ML predictions across NBA, NHL, NCAAB — 11 agents, 12 schedulers | Python, Flask, SQLite, scikit-learn | Private |
+| **March Madness Predictor** | 5-model ensemble, 77% accuracy, 18 CLI commands | TypeScript, Node.js | [Repo](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis) |
 | **Henchmen Trader** | Polymarket bot — Kelly sizing, risk management | Python, Flask, SQLite | Private |
-| **NCAAB Sweet 16 Analysis** | Deep tournament matchup modeling | Python | [Repo](https://github.com/seang1121/ncaab-sweet16-analysis) |
-| **NVDA Stock Explorer** | NVIDIA technicals, earnings impact modeling | Python | [Repo](https://github.com/seang1121/nvda) |
+| **NCAAB Sweet 16 Analysis** | Deep tournament matchup modeling | Python | [Repo](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis) |
+| **NVDA Screen Reader** | Contributing accessibility fixes to open-source screen reader | Python | [Repo](https://github.com/seang1121/nvda) |
 | **Sportsipy** | Multi-sport stats scraping library | Python | [Repo](https://github.com/seang1121/sportsipy) |
 | **Sports Betting MCP** | MCP server — exposes predictions to AI agents | Python, MCP | [Repo](https://github.com/seang1121/sports-betting-mcp) |
 
@@ -83,7 +83,7 @@ Official Docker MCP registry contributor. Infrastructure for discovering and dis
 
 | Project | What It Does | Stack | Link |
 |---------|-------------|-------|------|
-| **Investment Command Center** | 12 AI analyzers, Monte Carlo, Markowitz optimizer | Python, FastAPI, Next.js, TypeScript | [Repo](https://github.com/seang1121/investment-command-center) |
+| **Investment Command Center** | 10 analyzers, Monte Carlo, Markowitz optimizer | Python, FastAPI, Next.js, TypeScript | [Repo](https://github.com/seang1121/investment-command-center) |
 | **Fidelity Fund Analyzer** | Mutual fund comparison, expense optimization | Python | [Repo](https://github.com/seang1121/Fidelity-Fund-Analyzer) |
 | **Mortgage Rate Tracker** | Daily rate monitoring, lender comparison | Python | [Repo](https://github.com/seang1121/Mortgage-Interest-Rate-Lookup) |
 | **CD Ladder Analyzer** | CD rate comparison and ladder strategy simulator | HTML, JavaScript | [Repo](https://github.com/seang1121/CD-Ladder-Analyzer) |
@@ -95,9 +95,9 @@ Official Docker MCP registry contributor. Infrastructure for discovering and dis
 
 | Project | What It Does | Stack | Link |
 |---------|-------------|-------|------|
-| **OpenClaw Bot** | 15 cron jobs, 7 agents, browser automation | Node.js, Python, Discord.js, PM2 | Private |
+| **OpenClaw Bot** | 18 cron jobs, browser automation, ML filtering | Node.js, Python, Discord.js, PM2 | Private |
 | **Sports Betting MCP (Published)** | Registry-listed MCP server package | Python, MCP | [Repo](https://github.com/seang1121/sports-betting-mcp) |
-| **Fishing Report Analyzer** | 8-API intelligence, 100-pt Go/No-Go scoring | Python | [Repo](https://github.com/seang1121/Fishing-Report-Analyzer) |
+| **Fishing Report Analyzer** | 6-API intelligence, 100-pt Go/No-Go scoring | Python | [Repo](https://github.com/seang1121/Fishing-Report-Analyzer) |
 
 </details>
 
@@ -151,7 +151,7 @@ HTML/CSS       ██████                   Landing pages, dashboards, w
 
 ## What Sets Me Apart
 
-**I'm new to coding — and I'm already running 32 agents in production.** Not tutorials. Not toy projects. Real systems processing real data, making real predictions, and publishing real results every day.
+**I'm new to coding — and I'm already running 21+ agents in production.** Not tutorials. Not toy projects. Real systems processing real data, making real predictions, and publishing real results every day.
 
 **Everything is automated.** My cron jobs fire, data pipelines run, ML models retrain, reports publish, and trades execute — all without me touching a keyboard.
 
@@ -159,7 +159,7 @@ HTML/CSS       ██████                   Landing pages, dashboards, w
 
 **Multi-language.** Python, TypeScript, Rust, Go, JavaScript, SQL — I pick the right tool for the job. Contributing to the Google Workspace CLI (Rust) and Docker MCP Registry (Go).
 
-**Scale:** 28 projects · 8 languages · 32 agents · 15 cron jobs · 11 schedulers · 107 CLI skills · 8 API integrations
+**Scale:** 26 projects · 8 languages · 21+ agents · 18 cron jobs · 12 schedulers · 6+ API integrations
 
 ---
 
