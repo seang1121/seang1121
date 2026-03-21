@@ -28,6 +28,7 @@ Fully automated orchestration — every agent, every pipeline, every report runs
 
 ### AI Sports Betting Analyzer — *11 agents, 12 schedulers, live 24/7*
 Multi-sport ML prediction platform covering NBA, NHL, and NCAAB. Sport-siloed learning algorithms prevent cross-contamination between models. Multi-user weighted feedback — proven performers influence the AI more. Confidence calibration, automated Discord reporting, Cloudflare tunnel to production.
+
 sportsbettingaianalyzer.com
 
 `Python` `Flask` `SQLite` `scikit-learn` `SQL` · ![Private](https://img.shields.io/badge/repo-private-gray)
