@@ -27,20 +27,57 @@ This is what's firing right now, without me touching anything:
 
 ## What I Ship
 
-### AI Sports Betting Analyzer — *11 agents, 12 schedulers, live 24/7*
+### AI Sports Betting Analyzer — *11 agents, 12 schedulers, 2,670+ picks tracked, live 24/7*
 
-Multi-sport ML prediction platform covering **NBA, NHL, NCAAB, and MLB**. Sport-siloed learning algorithms prevent cross-contamination between models. Multi-user weighted feedback — proven performers influence the AI more. Confidence calibration, automated Discord reporting, Cloudflare tunnel to production.
+A full ML prediction platform that analyzes every game across **NBA, NHL, NCAAB, and MLB** — scrapes stats, runs them through 11 specialized AI agents, generates confidence-scored picks, and tracks results across 7 users. Every sport has its own isolated model so basketball patterns never bleed into hockey. The whole thing runs autonomously on a Cloudflare tunnel.
 
 **Live at [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com)**
 
-**Key agents:**
-- **Nimrod** — auto-generates bet slip images with WHY THIS PICK, KEY STATS, and ALL EDGES
-- **Injury Scraper** — real-time injury data from Covers.com, refreshes 2x daily
-- **Auto-Resolver** — resolves bets, updates W/L, feeds outcomes back to ML models
-- **Discord Reporter** — pushes high-confidence picks to private channels in real-time
-- **Moltbook Publisher** — daily AI-generated analysis posts to social platform
+**The 11 analysis agents** (each examines a different dimension of every game):
 
-`Python` `Flask` `SQLite` `scikit-learn` `SQL` · ![Private](https://img.shields.io/badge/repo-private-gray)
+| Agent | What It Analyzes |
+|-------|-----------------|
+| **Orchestrator** | The general manager — coordinates all agents in parallel, aggregates results |
+| **ML Learning Agent** | Gradient Boosting models trained per-sport on historical outcomes (614+ NBA samples, 857+ NCAAB, 448+ NHL) |
+| **Stats Signal Agent** | Team stats, offensive/defensive ratings, pace, shooting percentages, goalie stats |
+| **Trends Agent** | ATS records, over/under trends, home/away splits, streak analysis from Covers.com |
+| **Injury Intelligence** | Real-time injury reports — calculates impact on spread based on player value |
+| **Injury Monitor** | Background daemon that scrapes Covers.com injuries 2x daily (5 AM / 5 PM EST) |
+| **Line Movement Agent** | Tracks opening vs current spread — detects sharp money and reverse line movement |
+| **Line Watch Agent** | Background daemon that captures line snapshots throughout the day |
+| **Consensus Agent** | Aggregates all agent signals into a single probability with confidence weighting |
+| **Narrative Agent** | Generates ESPN-quality analyst text explaining why the pick was made |
+| **Nimrod** | Auto-generates visual bet slip images with stats, edges, and reasoning |
+
+**Data sources scraped and analyzed:**
+- Team stats per sport (offensive rating, defensive rating, pace, shooting %, goalie stats)
+- ATS records and over/under trends from Covers.com (NBA, NHL, NCAAB)
+- Real-time injury reports with player impact scoring
+- Live odds and line movement tracking
+- AP Poll rankings and conference standings (NCAAB)
+- Historical pick outcomes for ML retraining
+
+**Tracked results (real data from production):**
+
+| Sport | Picks | Record | Win Rate |
+|-------|-------|--------|----------|
+| NBA | 869 | 456W-365L | 55.5% |
+| NHL | 730 | 381W-304L | 55.6% |
+| NCAAB | 1,071 | 526W-495L | 51.5% |
+| **Total** | **2,670** | **1,363W-1,164L** | **53.9%** |
+
+**MCP integration — AI agents can call it:**
+The analyzer exposes an MCP-compatible API gateway (`/xk/` routes) with API key authentication and rate limiting. Any AI agent or MCP client can query today's picks, historical results, and model confidence scores programmatically. 6 API keys issued, tiered access (free/pro).
+
+Published MCP server: [sports-betting-mcp](https://github.com/seang1121/sports-betting-mcp) — listed on the MCP registry, lets any AI assistant pull live predictions.
+
+**Automation that runs daily:**
+- 12 schedulers: auto-resolve results, refresh suggestions, retrain ML models, generate Nimrod images, post to Discord, maintain data retention
+- Multi-user weighted learning: admin picks carry 65% weight, other users 35% — proven track records influence the AI more
+- Shadow tracking: logs picks silently to build training data without affecting live results
+- 6 API keys in rotation for odds data (auto-failover on rate limits)
+
+`Python` `Flask` `SQLite` `scikit-learn` `Playwright` `MCP` · ![Private](https://img.shields.io/badge/repo-private-gray)
 
 ---
 
