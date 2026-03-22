@@ -44,26 +44,6 @@ Multi-sport ML prediction platform covering **NBA, NHL, NCAAB, and MLB**. Sport-
 
 ---
 
-### AI Business with Automated Agents — *6 AI agents, plug-and-play for any business*
-
-A complete system that lets one person run an entire business using AI agents as automated employees. Website + Python backend + owner dashboard. Works for **any business type** — pressure washing, law firm, dental office, restaurant, real estate, auto detailing, landscaping. Change one config file and all 6 agents adapt.
-
-**Live showcase: [seang1121.github.io/ai-business-with-automated-agents](https://seang1121.github.io/ai-business-with-automated-agents/)**
-
-**The 6 agents:**
-- **Leads Agent** — drafts personalized follow-ups within minutes of form submission
-- **Estimating Agent** — calculates ballpark price ranges from service config
-- **Scheduling Agent** — finds open time slots based on business hours and existing jobs
-- **Reviews Agent** — drafts thank-you + Google review requests after job completion
-- **Finance Agent** — generates invoices with line items, tax, and payment methods
-- **Marketing Agent** — drafts platform-specific social media posts with hashtags
-
-Demo mode runs without API keys. 4 live demo sites (pressure washing, law firm, dental, restaurant). 22 passing tests.
-
-`Python` `Flask` `SQLite` `Claude API` `HTML/CSS/JS` · [View Repo →](https://github.com/seang1121/ai-business-with-automated-agents) · [Live Demos →](https://seang1121.github.io/ai-business-with-automated-agents/)
-
----
-
 ### Agent Command Center (ACC) — *See your entire automation empire on one screen*
 
 Imagine you've built 21 AI agents, 18 scheduled jobs, and a dozen projects — but they're scattered across folders, configs, and services. How do you know what's running? What's connected to what? What broke at 3 AM?
@@ -93,6 +73,26 @@ You run one command. ACC scans everything. Your whole empire appears.
 **The whole thing is open source.** Clone it, run the scanner, and in 60 seconds you're looking at a dashboard of your own setup — even if you only have 2 projects.
 
 `TypeScript` `React 19` `Tailwind 4.2` `Vite 8` `Python` · [View Repo →](https://github.com/seang1121/acc-agent-command-center)
+
+---
+
+### AI Business with Automated Agents — *6 AI agents, plug-and-play for any business*
+
+A complete system that lets one person run an entire business using AI agents as automated employees. Website + Python backend + owner dashboard. Works for **any business type** — pressure washing, law firm, dental office, restaurant, real estate, auto detailing, landscaping. Change one config file and all 6 agents adapt.
+
+**Live showcase: [seang1121.github.io/ai-business-with-automated-agents](https://seang1121.github.io/ai-business-with-automated-agents/)**
+
+**The 6 agents:**
+- **Leads Agent** — drafts personalized follow-ups within minutes of form submission
+- **Estimating Agent** — calculates ballpark price ranges from service config
+- **Scheduling Agent** — finds open time slots based on business hours and existing jobs
+- **Reviews Agent** — drafts thank-you + Google review requests after job completion
+- **Finance Agent** — generates invoices with line items, tax, and payment methods
+- **Marketing Agent** — drafts platform-specific social media posts with hashtags
+
+Demo mode runs without API keys. 4 live demo sites (pressure washing, law firm, dental, restaurant). 22 passing tests.
+
+`Python` `Flask` `SQLite` `Claude API` `HTML/CSS/JS` · [View Repo →](https://github.com/seang1121/ai-business-with-automated-agents) · [Live Demos →](https://seang1121.github.io/ai-business-with-automated-agents/)
 
 ---
 
