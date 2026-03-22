@@ -64,29 +64,35 @@ Demo mode runs without API keys. 4 live demo sites (pressure washing, law firm, 
 
 ---
 
-### Agent Command Center (ACC) — *Zero-config automation dashboard*
+### Agent Command Center (ACC) — *See your entire automation empire on one screen*
 
-A full React/TypeScript dashboard that auto-discovers your entire AI development ecosystem and visualizes it in real time. Clone it, run the scanner, and see everything — no manual registration, no config files.
+Imagine you've built 21 AI agents, 18 scheduled jobs, and a dozen projects — but they're scattered across folders, configs, and services. How do you know what's running? What's connected to what? What broke at 3 AM?
 
-**What it auto-discovers:**
-- Slash commands, agents, and skills from `~/.claude/`
-- MCP servers with transport, command, and env vars
-- Marketplace plugins (installed and enabled)
-- Hooks (event type, matcher, command chains)
-- Git repos with auto-detected tech stacks (16+ frameworks)
-- Agents, schedulers, cron jobs, and their status
+**ACC solves that.** It's a real-time dashboard that scans your machine, finds every agent, every scheduled job, every tool, and every project — then maps it all on one screen with zero manual setup.
 
-**Key features:**
-- **Relationship Map** — force-directed graph that auto-positions from connectivity (no manual layout)
-- **Per-Project Deep Dives** — click any project to see its agents, schedulers, cron jobs, and MCP servers
-- **Developer Ecosystem Tab** — every AI tool on one screen: commands, agents, skills, hooks, plugins
-- **Global Search** — `Ctrl+K` filters across all tabs instantly
-- **Auto-Sync Hook** — dashboard updates itself every time you end a session
-- **11 data files** — agents, schedulers, cron jobs, repos, projects, infrastructure, relationships, and more
+```
+You run one command. ACC scans everything. Your whole empire appears.
+```
 
-**Stack:** React 19, TypeScript 5.9 (strict, zero `any`), Tailwind 4.2, Vite 8, custom force-directed graph engine (no D3), Python scanner (zero dependencies)
+**Think of it like a mission control for your automations:**
 
-`TypeScript` `React` `Tailwind` `Python` · [View Repo →](https://github.com/seang1121/acc-agent-command-center)
+| What You See | What It Shows You |
+|---|---|
+| **Live Relationship Map** | An interactive graph connecting all your projects — which ones talk to each other, share data, or depend on the same services. The map builds itself from your data. No dragging boxes around. |
+| **Project Deep Dives** | Click any project and see everything about it — what agents run inside it, what's scheduled, what repos it touches, what tech stack it uses. One click, full picture. |
+| **Automation Overview** | Every cron job, every scheduler, every agent — listed with status (running, errored, disabled), last run time, and delivery target. Know instantly if something's broken. |
+| **Tool Inventory** | Every AI tool you've installed, every custom command you've written, every hook that fires on save or commit. Most developers don't even know what they have installed — this shows all of it. |
+| **Global Search** | `Ctrl+K` and start typing. Finds anything across all tabs — projects, agents, tools, repos. Instant results. |
+
+**How it works under the hood:**
+1. A Python scanner (zero dependencies) crawls your machine — finds AI configs, git repos, scheduled tasks
+2. It auto-detects tech stacks from 16+ framework files (package.json, requirements.txt, Cargo.toml, go.mod, etc.)
+3. Everything gets mapped into 11 structured data files that the React dashboard reads
+4. A hook auto-syncs the dashboard every time you end a coding session — it stays current without you thinking about it
+
+**The whole thing is open source.** Clone it, run the scanner, and in 60 seconds you're looking at a dashboard of your own setup — even if you only have 2 projects.
+
+`TypeScript` `React 19` `Tailwind 4.2` `Vite 8` `Python` · [View Repo →](https://github.com/seang1121/acc-agent-command-center)
 
 ---
 
