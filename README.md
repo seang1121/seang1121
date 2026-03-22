@@ -1,6 +1,6 @@
 # Sean Goudy
 
-**Self-taught engineer. Now operating 21+ automation agents, 18 cron jobs, and 12 schedulers — all running 24/7 with zero manual intervention.**
+**Self-taught engineer. Now operating 20 automation agents, 12 schedulers, and 11 active cron jobs — all running 24/7 with zero manual intervention.**
 
 I don't just write code — I build systems that make decisions, execute trades, publish reports, and learn from outcomes while I sleep. Every project ships. Every system runs in production.
 
@@ -10,18 +10,52 @@ I don't just write code — I build systems that make decisions, execute trades,
 
 This is what's firing right now, without me touching anything:
 
-| System | What It Does | Agents | Frequency |
-|--------|-------------|--------|-----------|
-| **AI Sports Betting Analyzer** | ML predictions across NBA, NHL, NCAAB, MLB — picks, confidence scoring, auto-resolve | 11 agents, 12 schedulers | Every game day |
-| **OpenClaw Bot** | Browser automation, ML pick filtering, Moltbook publishing, competitive intel | 18 cron jobs | Continuous |
-| **Nimrod** | Auto-generates bet slip images with stats, edges, and reasoning | 1 scheduler | Daily 11:55 AM EST |
-| **Discord Alerts** | Pushes high-confidence picks and reports to private channels | 1 agent | Real-time |
-| **Moltbook Auto-Poster** | Publishes AI-generated sports analysis to social platform | 1 scheduler | Daily 12:00 PM EST |
-| **Injury Scraper** | Scrapes Covers.com for real-time injury data across all sports | 1 cron | 5 AM / 5 PM EST |
-| **Auto-Resolver** | Resolves completed bets, updates W/L records, feeds back to ML | 1 scheduler | Daily |
-| **Investment Reports** | Monte Carlo simulations, portfolio health scoring, risk analysis | Automated | Weekly via GitHub Actions |
+### Betting Analyzer — 10 Analysis Agents + 12 Schedulers
 
-**Total: 21+ agents, 18 cron jobs, 12 schedulers** — orchestrated through the Developer Command Center.
+| Agent/System | What It Does | Runs |
+|---|---|---|
+| **Orchestrator** | Coordinates all analysis agents in parallel for every game | Every pick request |
+| **ML Learning Agent** | Gradient Boosting models trained per-sport on historical outcomes | Every pick request |
+| **Stats Signal Agent** | Team offensive/defensive ratings, pace, shooting %, goalie stats | Every pick request |
+| **Trends Agent** | ATS records, O/U trends, home/away splits from Covers.com | Every pick request |
+| **Injury Intelligence** | Calculates spread impact from real-time injury reports | Every pick request |
+| **Injury Monitor** | Background daemon — scrapes Covers.com injuries across all sports | 5 AM / 5 PM EST |
+| **Line Movement Agent** | Detects sharp money and reverse line movement on spreads | Every pick request |
+| **Line Watch Agent** | Background daemon — captures line snapshots throughout the day | Continuous |
+| **Consensus Agent** | Aggregates all agent signals into weighted probability | Every pick request |
+| **Narrative Agent** | Generates analyst-quality text explaining the pick reasoning | Every pick request |
+| **Nimrod** | Auto-generates visual bet slip images with stats and edges | Daily 11:55 AM EST |
+| **Auto-Resolver** | Resolves completed bets, updates W/L, feeds outcomes back to ML | Daily |
+| **Shadow Tracker** | Silently logs picks to build training data without affecting results | Continuous |
+| **Discord Listener** | Listens for commands in Discord, responds with picks and stats | Real-time |
+| **Discord Picks Poster** | Auto-formats and publishes today's picks to private channels | Game days |
+| **Agent Monitor** | Monitors health of all agents, restarts failures | Continuous |
+| **Watchdog** | Process-level monitoring — detects crashes, restarts services | Continuous |
+| **MCP Gateway** | Serves predictions via API to external AI agents (6 API keys active) | On request |
+
+### OpenClaw Bot — 11 Active Cron Jobs
+
+| Job | What It Does | Runs |
+|---|---|---|
+| **Morning Briefing** | Overnight results, today's schedule, action items | Daily 7:00 AM |
+| **Henchmen Auto-Picks** | Logs into analyzer, reads ML learnings, places picks across all sports | Weekdays 2:30 PM / Weekends 10:30 AM |
+| **Post-Resolve Analysis** | Analyzes last 500 picks, updates learning patterns, compiles W/L summary | Daily 3:15 AM |
+| **Discord Picks Digest** | Formats and publishes today's AI picks to Discord | Weekdays 2:45 PM / Weekends 10:45 AM |
+| **Fishing Report** | Runs 6-API analyzer, delivers Go/No-Go scoring | Daily 5:00 AM |
+| **Dashboard Watcher** | Monitors system health, reports anomalies | Every 6 hours |
+| **Evening Summary** | End-of-day recap — results, P&L, next-day preview | Daily 11:00 PM |
+| **Competitor Monitor** | Scrapes competitor activity, publishes intel report | Weekly (Mon 8 AM) |
+| **Daily Henchmen Fact** | AI-generated insight about patterns learned from the data | Daily 8:00 PM |
+
+### Other Automated Systems
+
+| System | What It Does | Runs |
+|---|---|---|
+| **Moltbook Auto-Poster** | Publishes AI-generated sports analysis to social platform | Daily 12:00 PM |
+| **Notification System** | Routes alerts across Discord, email, and SMS | Real-time |
+| **Investment Reports** | Monte Carlo simulations, portfolio health scoring | Weekly via GitHub Actions |
+
+**Verified totals: 20 autonomous agents/systems, 12 schedulers, 11 active cron jobs** — orchestrated through the Developer Command Center.
 
 ---
 
@@ -56,15 +90,6 @@ A full ML prediction platform that analyzes every game across **NBA, NHL, NCAAB,
 - Live odds and line movement tracking
 - AP Poll rankings and conference standings (NCAAB)
 - Historical pick outcomes for ML retraining
-
-**Tracked results (real data from production):**
-
-| Sport | Picks | Record | Win Rate |
-|-------|-------|--------|----------|
-| NBA | 869 | 456W-365L | 55.5% |
-| NHL | 730 | 381W-304L | 55.6% |
-| NCAAB | 1,071 | 526W-495L | 51.5% |
-| **Total** | **2,670** | **1,363W-1,164L** | **53.9%** |
 
 **MCP integration — AI agents can call it:**
 The analyzer exposes an MCP-compatible API gateway (`/xk/` routes) with API key authentication and rate limiting. Any AI agent or MCP client can query today's picks, historical results, and model confidence scores programmatically. 6 API keys issued, tiered access (free/pro).
@@ -157,7 +182,7 @@ Trading bot for Polymarket. Sportsbook odds signals feed a Kelly criterion posit
 
 ---
 
-### OpenClaw Bot — *18 cron jobs, fully autonomous*
+### OpenClaw Bot — *11 active cron jobs, fully autonomous*
 
 AI executive assistant running 18 scheduled jobs that operate my entire ecosystem without manual intervention. Browser automation, ML pick filtering, social publishing, competitive intelligence, and cross-platform reporting — all orchestrated through a local WebSocket gateway with PM2 process management.
 
@@ -225,7 +250,7 @@ Official Docker MCP registry contributor. Infrastructure for discovering and dis
 | Project | What It Does | Stack | Link |
 |---------|-------------|-------|------|
 | **AI Business with Automated Agents** | 6 AI agents run any business — leads, scheduling, invoicing, marketing | Python, Flask, SQLite, Claude API | [Repo](https://github.com/seang1121/ai-business-with-automated-agents) · [Live](https://seang1121.github.io/ai-business-with-automated-agents/) |
-| **OpenClaw Bot** | 18 cron jobs, browser automation, ML filtering, social publishing | Node.js, Python, Discord.js, PM2 | Private |
+| **OpenClaw Bot** | 11 active cron jobs, browser automation, ML filtering, social publishing | Node.js, Python, Discord.js, PM2 | Private |
 | **Agent Command Center** | Zero-config dashboard — auto-discovers agents, MCP servers, hooks, repos, cron jobs. Relationship map, deep dives, global search. React 19 + TypeScript strict | TypeScript, React, Tailwind, Python | [Repo](https://github.com/seang1121/acc-agent-command-center) |
 | **DAAV** | Developer Automation Agent Visualizer | TypeScript | [Repo](https://github.com/seang1121/developer-automation-agent-visualizer) |
 | **Fishing Report Analyzer** | 6-API intelligence, 100-pt Go/No-Go scoring | Python | [Repo](https://github.com/seang1121/Fishing-Report-Analyzer) |
@@ -292,7 +317,7 @@ HTML/CSS       ██████                   Landing pages, dashboards, d
 
 ## What Sets Me Apart
 
-**I'm self-taught — and I'm already running 21+ agents in production.** Not tutorials. Not toy projects. Real systems processing real data, making real predictions, and publishing real results every day.
+**I'm self-taught — and I'm already running 20 agents in production.** Not tutorials. Not toy projects. Real systems processing real data, making real predictions, and publishing real results every day.
 
 **Everything is automated.** My cron jobs fire, data pipelines run, ML models retrain, reports publish, and trades execute — all without me touching a keyboard.
 
@@ -302,7 +327,7 @@ HTML/CSS       ██████                   Landing pages, dashboards, d
 
 **Multi-language.** Python, TypeScript, Rust, Go, JavaScript, SQL — I pick the right tool for the job. Contributing to the Google Workspace CLI (Rust) and Docker MCP Registry (Go).
 
-**Scale:** 27 projects · 8 languages · 21+ agents · 18 cron jobs · 12 schedulers · 4 live demo sites
+**Scale:** 27 projects · 8 languages · 20 agents · 11 active cron jobs · 12 schedulers · 4 live demo sites
 
 ---
 
