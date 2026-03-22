@@ -64,11 +64,29 @@ Demo mode runs without API keys. 4 live demo sites (pressure washing, law firm, 
 
 ---
 
-### Agent Command Center (ACC) — *Self-configuring automation dashboard*
+### Agent Command Center (ACC) — *Zero-config automation dashboard*
 
-Self-configuring dashboard that auto-discovers and visualizes all AI agents, MCP servers, hooks, plugins, and automations across my ecosystem. No manual registration — it scans and maps everything.
+A full React/TypeScript dashboard that auto-discovers your entire AI development ecosystem and visualizes it in real time. Clone it, run the scanner, and see everything — no manual registration, no config files.
 
-`TypeScript` · [View Repo →](https://github.com/seang1121/acc-agent-command-center)
+**What it auto-discovers:**
+- Slash commands, agents, and skills from `~/.claude/`
+- MCP servers with transport, command, and env vars
+- Marketplace plugins (installed and enabled)
+- Hooks (event type, matcher, command chains)
+- Git repos with auto-detected tech stacks (16+ frameworks)
+- Agents, schedulers, cron jobs, and their status
+
+**Key features:**
+- **Relationship Map** — force-directed graph that auto-positions from connectivity (no manual layout)
+- **Per-Project Deep Dives** — click any project to see its agents, schedulers, cron jobs, and MCP servers
+- **Developer Ecosystem Tab** — every AI tool on one screen: commands, agents, skills, hooks, plugins
+- **Global Search** — `Ctrl+K` filters across all tabs instantly
+- **Auto-Sync Hook** — dashboard updates itself every time you end a session
+- **11 data files** — agents, schedulers, cron jobs, repos, projects, infrastructure, relationships, and more
+
+**Stack:** React 19, TypeScript 5.9 (strict, zero `any`), Tailwind 4.2, Vite 8, custom force-directed graph engine (no D3), Python scanner (zero dependencies)
+
+`TypeScript` `React` `Tailwind` `Python` · [View Repo →](https://github.com/seang1121/acc-agent-command-center)
 
 ---
 
@@ -165,7 +183,7 @@ Official Docker MCP registry contributor. Infrastructure for discovering and dis
 |---------|-------------|-------|------|
 | **AI Business with Automated Agents** | 6 AI agents run any business — leads, scheduling, invoicing, marketing | Python, Flask, SQLite, Claude API | [Repo](https://github.com/seang1121/ai-business-with-automated-agents) · [Live](https://seang1121.github.io/ai-business-with-automated-agents/) |
 | **OpenClaw Bot** | 18 cron jobs, browser automation, ML filtering, social publishing | Node.js, Python, Discord.js, PM2 | Private |
-| **Agent Command Center** | Self-configuring dashboard — auto-discovers agents, MCP servers, hooks | TypeScript | [Repo](https://github.com/seang1121/acc-agent-command-center) |
+| **Agent Command Center** | Zero-config dashboard — auto-discovers agents, MCP servers, hooks, repos, cron jobs. Relationship map, deep dives, global search. React 19 + TypeScript strict | TypeScript, React, Tailwind, Python | [Repo](https://github.com/seang1121/acc-agent-command-center) |
 | **DAAV** | Developer Automation Agent Visualizer | TypeScript | [Repo](https://github.com/seang1121/developer-automation-agent-visualizer) |
 | **Fishing Report Analyzer** | 6-API intelligence, 100-pt Go/No-Go scoring | Python | [Repo](https://github.com/seang1121/Fishing-Report-Analyzer) |
 
