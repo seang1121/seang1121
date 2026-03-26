@@ -1,4 +1,4 @@
-# Sean Goudy
+# Sean G
 
 **Self-taught engineer. Now operating 20 automation agents, 12 schedulers, and 11 active cron jobs — all running 24/7 with zero manual intervention.**
 
