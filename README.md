@@ -1,341 +1,112 @@
-# Sean G
+# Hey, I'm Sean
 
-**Self-taught engineer. Now operating 20 automation agents, 12 schedulers, and 11 active cron jobs — all running 24/7 with zero manual intervention.**
+**Sales professional by day. Self-taught engineer by obsession.** I got tired of doing repetitive tasks manually, so I started building systems to do them for me. Now I have 20+ autonomous agents, 12 schedulers, and 11 cron jobs running 24/7 while I work my day job.
 
-I don't just write code — I build systems that make decisions, execute trades, publish reports, and learn from outcomes while I sleep. Every project ships. Every system runs in production.
-
----
-
-## What Runs 24/7
-
-This is what's firing right now, without me touching anything:
-
-### Betting Analyzer — 10 Analysis Agents + 12 Schedulers
-
-| Agent/System | What It Does | Runs |
-|---|---|---|
-| **Orchestrator** | Coordinates all analysis agents in parallel for every game | Every pick request |
-| **ML Learning Agent** | Gradient Boosting models trained per-sport on historical outcomes | Every pick request |
-| **Stats Signal Agent** | Team offensive/defensive ratings, pace, shooting %, goalie stats | Every pick request |
-| **Trends Agent** | ATS records, O/U trends, home/away splits from Covers.com | Every pick request |
-| **Injury Intelligence** | Calculates spread impact from real-time injury reports | Every pick request |
-| **Injury Monitor** | Background daemon — scrapes Covers.com injuries across all sports | 5 AM / 5 PM EST |
-| **Line Movement Agent** | Detects sharp money and reverse line movement on spreads | Every pick request |
-| **Line Watch Agent** | Background daemon — captures line snapshots throughout the day | Continuous |
-| **Consensus Agent** | Aggregates all agent signals into weighted probability | Every pick request |
-| **Narrative Agent** | Generates analyst-quality text explaining the pick reasoning | Every pick request |
-| **Nimrod** | Auto-generates visual bet slip images with stats and edges | Daily 11:55 AM EST |
-| **Auto-Resolver** | Resolves completed bets, updates W/L, feeds outcomes back to ML | Daily |
-| **Shadow Tracker** | Silently logs picks to build training data without affecting results | Continuous |
-| **Discord Listener** | Listens for commands in Discord, responds with picks and stats | Real-time |
-| **Discord Picks Poster** | Auto-formats and publishes today's picks to private channels | Game days |
-| **Agent Monitor** | Monitors health of all agents, restarts failures | Continuous |
-| **Watchdog** | Process-level monitoring — detects crashes, restarts services | Continuous |
-| **MCP Gateway** | Serves predictions via API to external AI agents (6 API keys active) | On request |
-
-### OpenClaw Bot — 11 Active Cron Jobs
-
-| Job | What It Does | Runs |
-|---|---|---|
-| **Morning Briefing** | Overnight results, today's schedule, action items | Daily 7:00 AM |
-| **Henchmen Auto-Picks** | Logs into analyzer, reads ML learnings, places picks across all sports | Weekdays 2:30 PM / Weekends 10:30 AM |
-| **Post-Resolve Analysis** | Analyzes last 500 picks, updates learning patterns, compiles W/L summary | Daily 3:15 AM |
-| **Discord Picks Digest** | Formats and publishes today's AI picks to Discord | Weekdays 2:45 PM / Weekends 10:45 AM |
-| **Fishing Report** | Runs 6-API analyzer, delivers Go/No-Go scoring | Daily 5:00 AM |
-| **Dashboard Watcher** | Monitors system health, reports anomalies | Every 6 hours |
-| **Evening Summary** | End-of-day recap — results, P&L, next-day preview | Daily 11:00 PM |
-| **Competitor Monitor** | Scrapes competitor activity, publishes intel report | Weekly (Mon 8 AM) |
-| **Daily Henchmen Fact** | AI-generated insight about patterns learned from the data | Daily 8:00 PM |
-
-### Other Automated Systems
-
-| System | What It Does | Runs |
-|---|---|---|
-| **Moltbook Auto-Poster** | Publishes AI-generated sports analysis to social platform | Daily 12:00 PM |
-| **Notification System** | Routes alerts across Discord, email, and SMS | Real-time |
-| **Investment Reports** | Monte Carlo simulations, portfolio health scoring | Weekly via GitHub Actions |
-
-**Verified totals: 20 autonomous agents/systems, 12 schedulers, 11 active cron jobs** — orchestrated through the Developer Command Center.
+I don't have a CS degree. I have problems I refused to solve manually twice.
 
 ---
 
-## What I Ship
+## What I Build
 
-### AI Sports Betting Analyzer — *11 agents, 12 schedulers, 2,670+ picks tracked, live 24/7*
+I solve my own problems with code, then open-source them so you don't have to.
 
-A full ML prediction platform that analyzes every game across **NBA, NHL, NCAAB, and MLB** — scrapes stats, runs them through 11 specialized AI agents, generates confidence-scored picks, and tracks results across 7 users. Every sport has its own isolated model so basketball patterns never bleed into hockey. The whole thing runs autonomously on a Cloudflare tunnel.
+### Betting & Sports Analytics
+> I wanted better sports picks. So I built an ML platform with 12 analysis agents that runs across NBA, NHL, NCAAB, and MLB.
 
-**Live at [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com)**
+| Project | What It Does | Stack |
+|---------|-------------|-------|
+| [**Sports Betting MCP**](https://github.com/seang1121/sports-betting-mcp) | The first MCP server for sports betting -- 9 tools, 59.6% win rate, 1,353+ picks | Python, MCP |
+| [**March Madness Predictor**](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis) | 5-model ensemble, 14-year backtest, 77% accuracy. Beats chalk by 26 pts/yr | TypeScript |
+| [**Henchmen Trader**](https://github.com/seang1121/henchmen-trader) | Autonomous Polymarket bot -- exploits sportsbook-vs-crowd mispricings | Python, Flask |
 
-**The 11 analysis agents** (each examines a different dimension of every game):
+### Finance & Mortgage Tools
+> I work in sales in the mortgage/finance space. These tools save me hours every week and they'll save you hours too.
 
-| Agent | What It Analyzes |
-|-------|-----------------|
-| **Orchestrator** | The general manager — coordinates all agents in parallel, aggregates results |
-| **ML Learning Agent** | Gradient Boosting models trained per-sport on historical outcomes (614+ NBA samples, 857+ NCAAB, 448+ NHL) |
-| **Stats Signal Agent** | Team stats, offensive/defensive ratings, pace, shooting percentages, goalie stats |
-| **Trends Agent** | ATS records, over/under trends, home/away splits, streak analysis from Covers.com |
-| **Injury Intelligence** | Real-time injury reports — calculates impact on spread based on player value |
-| **Injury Monitor** | Background daemon that scrapes Covers.com injuries 2x daily (5 AM / 5 PM EST) |
-| **Line Movement Agent** | Tracks opening vs current spread — detects sharp money and reverse line movement |
-| **Line Watch Agent** | Background daemon that captures line snapshots throughout the day |
-| **Consensus Agent** | Aggregates all agent signals into a single probability with confidence weighting |
-| **Narrative Agent** | Generates ESPN-quality analyst text explaining why the pick was made |
-| **Nimrod** | Auto-generates visual bet slip images with stats, edges, and reasoning |
+| Project | What It Does | Stack |
+|---------|-------------|-------|
+| [**Mortgage Rate Lookup**](https://github.com/seang1121/Multi-Lender-Mortgage-Rate-Lookup) | One command, 10 lenders ranked best to worst. Beats anti-bot detection | Python, Patchright |
+| [**Daily Rate Reports**](https://github.com/seang1121/OpenClaw-Mortgage-Interest-Rates-Report) | Automated daily mortgage rates delivered to Discord -- set up once, never check again | Python, OpenClaw |
+| [**Investment Command Center**](https://github.com/seang1121/investment-command-center) | Monte Carlo simulation, Markowitz optimization, 12 AI analyzers | TypeScript, Python, Next.js |
+| [**CD Ladder Analyzer**](https://github.com/seang1121/CD-Ladder-Analyzer) | Compare CD rates and ladder strategies across 6 institutions | Python, GitHub Pages |
 
-**Data sources scraped and analyzed:**
-- Team stats per sport (offensive rating, defensive rating, pace, shooting %, goalie stats)
-- ATS records and over/under trends from Covers.com (NBA, NHL, NCAAB)
-- Real-time injury reports with player impact scoring
-- Live odds and line movement tracking
-- AP Poll rankings and conference standings (NCAAB)
-- Historical pick outcomes for ML retraining
+### AI Agents & Automation
+> I believe one person with the right agents can run what used to take a team. These tools prove it.
 
-**MCP integration — AI agents can call it:**
-The analyzer exposes an MCP-compatible API gateway (`/xk/` routes) with API key authentication and rate limiting. Any AI agent or MCP client can query today's picks, historical results, and model confidence scores programmatically. 6 API keys issued, tiered access (free/pro).
+| Project | What It Does | Stack |
+|---------|-------------|-------|
+| [**AI Business Agents**](https://github.com/seang1121/ai-business-with-automated-agents) | Run a business with 6 AI agents -- one config file, any industry. [Live demo](https://seang1121.github.io/ai-business-with-automated-agents) | Python, Flask |
+| [**Agent Command Center**](https://github.com/seang1121/acc-agent-command-center) | Dashboard that auto-discovers your MCP servers, agents, hooks, and cron jobs | TypeScript, React |
 
-Published MCP server: [sports-betting-mcp](https://github.com/seang1121/sports-betting-mcp) — listed on the MCP registry, lets any AI assistant pull live predictions.
-
-**Automation that runs daily:**
-- 12 schedulers: auto-resolve results, refresh suggestions, retrain ML models, generate Nimrod images, post to Discord, maintain data retention
-- Multi-user weighted learning: admin picks carry 65% weight, other users 35% — proven track records influence the AI more
-- Shadow tracking: logs picks silently to build training data without affecting live results
-- 6 API keys in rotation for odds data (auto-failover on rate limits)
-
-`Python` `Flask` `SQLite` `scikit-learn` `Playwright` `MCP` · ![Private](https://img.shields.io/badge/repo-private-gray)
+### Everything Else
+| Project | What It Does |
+|---------|-------------|
+| [**Fishing Report Analyzer**](https://github.com/seang1121/Fishing-Report-Analyzer) | 7 free APIs, 9 spots ranked, Go/No-Go score for Jacksonville ICW fishing |
+| [**NMLS Exam Prep**](https://github.com/seang1121/Loan-Officer-Exam-Prep-Study-Guide) | Built my own study system to pass the mortgage loan originator exam |
 
 ---
 
-### Agent Command Center (ACC) — *See your entire automation empire on one screen*
+## The Sales + Code Playbook
 
-Imagine you've built 21 AI agents, 18 scheduled jobs, and a dozen projects — but they're scattered across folders, configs, and services. How do you know what's running? What's connected to what? What broke at 3 AM?
+Most people think sales and engineering are different worlds. I think they're the same skill applied differently:
 
-**ACC solves that.** It's a real-time dashboard that scans your machine, finds every agent, every scheduled job, every tool, and every project — then maps it all on one screen with zero manual setup.
+- **Mortgage rates are hard to compare?** I built a scraper that checks 10 lenders in 30 seconds
+- **Sports picks take hours of research?** I built 12 AI agents that do it in parallel
+- **Small businesses can't afford a marketing team?** I built 6 AI agents that handle leads, scheduling, invoicing, and reviews for any industry
+- **Bracket pools are pure guesswork?** I built a 5-model ensemble backtested against 14 tournaments
 
-```
-You run one command. ACC scans everything. Your whole empire appears.
-```
-
-**Think of it like a mission control for your automations:**
-
-| What You See | What It Shows You |
-|---|---|
-| **Live Relationship Map** | An interactive graph connecting all your projects — which ones talk to each other, share data, or depend on the same services. The map builds itself from your data. No dragging boxes around. |
-| **Project Deep Dives** | Click any project and see everything about it — what agents run inside it, what's scheduled, what repos it touches, what tech stack it uses. One click, full picture. |
-| **Automation Overview** | Every cron job, every scheduler, every agent — listed with status (running, errored, disabled), last run time, and delivery target. Know instantly if something's broken. |
-| **Tool Inventory** | Every AI tool you've installed, every custom command you've written, every hook that fires on save or commit. Most developers don't even know what they have installed — this shows all of it. |
-| **Global Search** | `Ctrl+K` and start typing. Finds anything across all tabs — projects, agents, tools, repos. Instant results. |
-
-**How it works under the hood:**
-1. A Python scanner (zero dependencies) crawls your machine — finds AI configs, git repos, scheduled tasks
-2. It auto-detects tech stacks from 16+ framework files (package.json, requirements.txt, Cargo.toml, go.mod, etc.)
-3. Everything gets mapped into 11 structured data files that the React dashboard reads
-4. A hook auto-syncs the dashboard every time you end a coding session — it stays current without you thinking about it
-
-**The whole thing is open source.** Clone it, run the scanner, and in 60 seconds you're looking at a dashboard of your own setup — even if you only have 2 projects.
-
-`TypeScript` `React 19` `Tailwind 4.2` `Vite 8` `Python` · [View Repo →](https://github.com/seang1121/acc-agent-command-center)
+If you're in sales, finance, or any non-technical field -- **you can do this too.** Every one of these projects started as "I wonder if I can automate this" and ended as a production system. Start with a problem you're tired of solving manually.
 
 ---
 
-### AI Business with Automated Agents — *6 AI agents, plug-and-play for any business*
+## Tech Stack
 
-A complete system that lets one person run an entire business using AI agents as automated employees. Website + Python backend + owner dashboard. Works for **any business type** — pressure washing, law firm, dental office, restaurant, real estate, auto detailing, landscaping. Change one config file and all 6 agents adapt.
-
-**Live showcase: [seang1121.github.io/ai-business-with-automated-agents](https://seang1121.github.io/ai-business-with-automated-agents/)**
-
-**The 6 agents:**
-- **Leads Agent** — drafts personalized follow-ups within minutes of form submission
-- **Estimating Agent** — calculates ballpark price ranges from service config
-- **Scheduling Agent** — finds open time slots based on business hours and existing jobs
-- **Reviews Agent** — drafts thank-you + Google review requests after job completion
-- **Finance Agent** — generates invoices with line items, tax, and payment methods
-- **Marketing Agent** — drafts platform-specific social media posts with hashtags
-
-Demo mode runs without API keys. 4 live demo sites (pressure washing, law firm, dental, restaurant). 22 passing tests.
-
-`Python` `Flask` `SQLite` `Claude API` `HTML/CSS/JS` · [View Repo →](https://github.com/seang1121/ai-business-with-automated-agents) · [Live Demos →](https://seang1121.github.io/ai-business-with-automated-agents/)
-
----
-
-### Investment Command Center — *10 analyzers, automated weekly reports*
-
-Full-stack investment intelligence. Monte Carlo simulation (10k paths), Markowitz portfolio optimization, Gordon Growth valuation, 5 stock/fund scanners, risk analysis, proactive advisor, financial health scoring. Weekly automated reports via GitHub Actions.
-
-`Python` `FastAPI` `Next.js` `TypeScript` `SQL` · [View Repo →](https://github.com/seang1121/investment-command-center)
-
----
-
-### March Madness Bracket Predictor — *77% accuracy, 14-year backtest*
-
-5 independent prediction models combined into a calibrated ensemble. KenPom efficiency, defensive identity, market intelligence, tempo/matchup analysis, and historical seed patterns. 18 CLI commands, Monte Carlo simulation, champion-diversified bracket strategy for 2026.
-
-`TypeScript` `Node.js` · [View Repo →](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis)
-
----
-
-### Henchmen Trader — *Polymarket prediction markets*
-
-Trading bot for Polymarket. Sportsbook odds signals feed a Kelly criterion position sizer with hard risk limits (20% max daily loss, 10% max position, 30% drawdown halt). Dead market sniper for mispriced contracts. Paper trading pipeline with live execution ready.
-
-`Python` `Flask` `SQLite` `SQL` · ![Private](https://img.shields.io/badge/repo-private-gray)
-
----
-
-### OpenClaw Bot — *11 active cron jobs, fully autonomous*
-
-AI executive assistant running 18 scheduled jobs that operate my entire ecosystem without manual intervention. Browser automation, ML pick filtering, social publishing, competitive intelligence, and cross-platform reporting — all orchestrated through a local WebSocket gateway with PM2 process management.
-
-**Active cron jobs (all deliver to Discord automatically):**
-
-| Job | Schedule | What It Does |
-|-----|----------|-------------|
-| **Morning Briefing** | Daily 7:00 AM | Compiles overnight results, today's schedule, and action items |
-| **Henchmen Auto-Picks (Weekday)** | Mon-Fri 2:30 PM | Logs into betting analyzer, reads ML learnings, places picks across all sports |
-| **Henchmen Auto-Picks (Weekend)** | Sat-Sun 10:30 AM | Same pipeline, earlier timing for weekend game schedules |
-| **Post-Resolve Analysis** | Daily 3:15 AM | Runs pick analysis on last 500 picks, updates learning patterns, compiles W/L summary |
-| **Discord Picks Digest (Weekday)** | Mon-Fri 2:45 PM | Formats and publishes today's AI picks to Discord channel |
-| **Discord Picks Digest (Weekend)** | Sat-Sun 10:45 AM | Weekend version of picks digest |
-| **Daily Fishing Report** | Daily 5:00 AM | Runs 6-API fishing analyzer, delivers Go/No-Go scoring to Discord |
-| **Dashboard Watcher** | Every 6 hours | Monitors system health, reports agent status and anomalies |
-| **Evening Summary** | Daily 11:00 PM | End-of-day recap — results, P&L, next-day preview |
-| **Competitor Monitor** | Weekly (Mon 8 AM) | Scrapes competitor activity and publishes intel report |
-| **Daily Henchmen Fact** | Daily 8:00 PM | AI-generated insight about patterns learned from working with the data |
-| **Moltbook Publishers** | Multiple schedules | Daily picks, results recaps, comment monitoring, engagement (currently being rebuilt) |
-
-**Key capabilities:**
-- Browser automation via OpenClaw's built-in Chromium (logs into web apps, fills forms, scrapes data)
-- ML-informed pick filtering — reads `BETTING_LEARNINGS.md` before every pick session
-- Cross-platform delivery — Discord, Telegram, Moltbook from a single pipeline
-- Isolated sessions per job — each cron runs in its own context, no crosstalk
-- Auto-recovery — jobs track consecutive errors and last delivery status
-
-`Node.js` `Python` `JavaScript` `Discord.js` `PM2` · ![Private](https://img.shields.io/badge/repo-private-gray)
-
----
-
-### Google Workspace CLI — *Rust, Google Developer*
-
-Google Workspace command-line tool — one CLI for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills. Contributing to the official Google Workspace ecosystem.
-
-`Rust` · [View Repo →](https://github.com/seang1121/cli)
-
----
-
-### Docker MCP Registry — *Go*
-
-Official Docker MCP registry contributor. Infrastructure for discovering and distributing Model Context Protocol servers across the ecosystem.
-
-`Go` · [View Repo →](https://github.com/seang1121/mcp-registry)
-
----
-
-## Full Project Index
-
-<details><summary><strong>Analytics & Trading (6 projects)</strong></summary>
-
-| Project | What It Does | Stack | Link |
-|---------|-------------|-------|------|
-| **AI Sports Betting Analyzer** | ML predictions across NBA, NHL, NCAAB, MLB — 11 agents, 12 schedulers | Python, Flask, SQLite, scikit-learn | [Live Site](https://sportsbettingaianalyzer.com) · Private |
-| **March Madness Predictor** | 5-model ensemble, 77% accuracy, 18 CLI commands | TypeScript, Node.js | [Repo](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis) |
-| **Henchmen Trader** | Polymarket bot — Kelly sizing, risk management, dead market sniper | Python, Flask, SQLite | Private |
-| **Sportsipy** | Multi-sport stats scraping library | Python | [Repo](https://github.com/seang1121/sportsipy) |
-| **Sports Betting MCP** | MCP server — exposes predictions to AI agents | Python, MCP | [Repo](https://github.com/seang1121/sports-betting-mcp) |
-| **Betting AI Landing** | Marketing site for the analyzer platform | HTML, CSS, JavaScript | [Repo](https://github.com/seang1121/betting-ai-landing) |
-
-</details>
-
-<details><summary><strong>AI & Automation (5 projects)</strong></summary>
-
-| Project | What It Does | Stack | Link |
-|---------|-------------|-------|------|
-| **AI Business with Automated Agents** | 6 AI agents run any business — leads, scheduling, invoicing, marketing | Python, Flask, SQLite, Claude API | [Repo](https://github.com/seang1121/ai-business-with-automated-agents) · [Live](https://seang1121.github.io/ai-business-with-automated-agents/) |
-| **OpenClaw Bot** | 11 active cron jobs, browser automation, ML filtering, social publishing | Node.js, Python, Discord.js, PM2 | Private |
-| **Agent Command Center** | Zero-config dashboard — auto-discovers agents, MCP servers, hooks, repos, cron jobs. Relationship map, deep dives, global search. React 19 + TypeScript strict | TypeScript, React, Tailwind, Python | [Repo](https://github.com/seang1121/acc-agent-command-center) |
-| **DAAV** | Developer Automation Agent Visualizer | TypeScript | [Repo](https://github.com/seang1121/developer-automation-agent-visualizer) |
-| **Fishing Report Analyzer** | 6-API intelligence, 100-pt Go/No-Go scoring | Python | [Repo](https://github.com/seang1121/Fishing-Report-Analyzer) |
-
-</details>
-
-<details><summary><strong>Finance (4 projects)</strong></summary>
-
-| Project | What It Does | Stack | Link |
-|---------|-------------|-------|------|
-| **Investment Command Center** | 10 analyzers, Monte Carlo, Markowitz optimizer, weekly auto-reports | Python, FastAPI, Next.js, TypeScript | [Repo](https://github.com/seang1121/investment-command-center) |
-| **Mortgage Rate Tracker** | Daily rate monitoring, lender comparison, historical logging | Python | [Repo](https://github.com/seang1121/Mortgage-Interest-Rate-Lookup) |
-| **CD Ladder Analyzer** | CD rate comparison and ladder strategy simulator | HTML, JavaScript | [Repo](https://github.com/seang1121/CD-Ladder-Analyzer) |
-| **Loan Officer Exam Prep** | NMLS SAFE MLO exam study course and prep guide | HTML | [Repo](https://github.com/seang1121/Loan-Officer-Exam-Prep-Study-Guide) |
-
-</details>
-
-<details><summary><strong>Developer Tools & MCP (7 projects)</strong></summary>
-
-| Project | What It Does | Stack | Link |
-|---------|-------------|-------|------|
-| **Google Workspace CLI** | One CLI for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin | Rust | [Repo](https://github.com/seang1121/cli) |
-| **Docker MCP Registry** | Official MCP server discovery and distribution | Go | [Repo](https://github.com/seang1121/mcp-registry) |
-| **MCP Servers** | Model Context Protocol server implementations | TypeScript | [Repo](https://github.com/seang1121/servers) |
-| **Sports Betting MCP** | Registry-listed MCP server — exposes predictions to AI agents | Python, MCP | [Repo](https://github.com/seang1121/sports-betting-mcp) |
-| **Agent Academy** | Multi-agent orchestration, reference agents | PowerShell | [Repo](https://github.com/seang1121/agent-academy) |
-| **Awesome MCP Servers** | Curated community MCP server list | Markdown | [Repo](https://github.com/seang1121/awesome-mcp-servers) |
-| **NVDA Screen Reader** | Contributing accessibility fixes to open-source screen reader | Python | [Repo](https://github.com/seang1121/nvda) |
-
-</details>
-
-<details><summary><strong>Infrastructure (3 projects)</strong></summary>
-
-| Project | What It Does | Stack | Link |
-|---------|-------------|-------|------|
-| **Developer Command Center** | React dashboard — monitors all agents, schedulers, cron jobs | TypeScript, React, Tailwind | Private |
-| **Process Monitor** | WMI daemon for process detection and alerting | Python, WMI | Private |
-| **Fixer GitHub** | Automated repo cleanup and maintenance | Python | Private |
-
-</details>
-
----
-
-## Languages & Tools
-
-```
-Python         ████████████████████████  Primary — Flask, FastAPI, scikit-learn, scrapers
-TypeScript     ████████████████         React, Next.js, Node.js, Vite
-Rust           ████████████             Google Workspace CLI, systems programming
-JavaScript     ████████████             Discord.js, browser automation, PM2
-SQL            ████████████             SQLite across every major project
-Go             ████████                 Docker MCP Registry, infrastructure
-Shell/Bash     ████████                 Automation scripts, schedulers, CI
-HTML/CSS       ██████                   Landing pages, dashboards, demo sites
-```
-
-**Frameworks:** Flask · FastAPI · React · Next.js · Discord.js
-**AI/ML:** scikit-learn · Claude API · MCP Protocol · Multi-agent systems
-**Data:** SQLite · yfinance · NOAA APIs · Polymarket CLOB API · Web scraping
-**Infrastructure:** PM2 · Cloudflare Tunnel · Vite · GitHub Actions · Docker · OpenClaw
-**Ecosystem:** Google Developer · MCP Protocol contributor
-
----
-
-## What Sets Me Apart
-
-**I'm self-taught — and I'm already running 20 agents in production.** Not tutorials. Not toy projects. Real systems processing real data, making real predictions, and publishing real results every day.
-
-**Everything is automated.** My cron jobs fire, data pipelines run, ML models retrain, reports publish, and trades execute — all without me touching a keyboard.
-
-**I build end-to-end.** From scraping raw data to training models to deploying dashboards to monitoring with alerts. Every project is a complete system, not a script.
-
-**I build for any industry.** The AI Business Agents system proves it — one config file adapts 6 AI agents to run a law firm, dental office, restaurant, or any other business. Same architecture, different config.
-
-**Multi-language.** Python, TypeScript, Rust, Go, JavaScript, SQL — I pick the right tool for the job. Contributing to the Google Workspace CLI (Rust) and Docker MCP Registry (Go).
-
-**Scale:** 27 projects · 8 languages · 20 agents · 11 active cron jobs · 12 schedulers · 4 live demo sites
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Shell](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 
 ---
 
 ## GitHub Stats
 
-![Sean's GitHub Stats](https://github-readme-stats.vercel.app/api?username=seang1121&show_icons=true&theme=dark)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=seang1121&layout=compact&theme=dark)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=seang1121&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=seang1121&layout=compact&theme=tokyonight&hide_border=true&langs_count=10" alt="Top Languages" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=seang1121&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+</p>
 
 ---
 
-*Building systems that make decisions while I sleep.*
+## Currently
+
+- Building MLB prediction models for Opening Day 2026
+- Expanding the MCP server ecosystem for sports analytics
+- Trading on Polymarket with autonomous edge detection
+- Tracking mortgage rates daily across 10 lenders for my sales work
+
+---
+
+## Let's Connect
+
+- **Live platform:** [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com)
+- **Social:** [Moltbook @HenchmenAI](https://www.moltbook.com/u/henchmenai)
+
+---
+
+*Sales professional. Self-taught engineer. Building the systems that do the boring stuff so I don't have to.*
