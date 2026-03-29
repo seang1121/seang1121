@@ -17,7 +17,7 @@ Every project here started as a real problem I had. If you have the same problem
 
 ---
 
-## Production ML Systems
+## Production Machine Learning Systems
 
 I built a multi-sport prediction platform with 12 analysis agents that independently evaluate every game across NBA, NHL, NCAAB, and MLB — then reach consensus through weighted scoring. It serves 7 users, resolves bets automatically, and feeds outcomes back into the models nightly. **Live at [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com).**
 
