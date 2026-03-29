@@ -8,12 +8,7 @@ Every project here started as a real problem I had. If you have the same problem
 
 ## By the Numbers
 
-| | |
-|---|---|
-| **1,353+** picks tracked | **59.6%** documented win rate |
-| **10** lenders scraped daily | **20+** autonomous agents |
-| **7** concurrent platform users | **12** sports analysis models |
-| **5** live production systems | **9** published open-source repos |
+**1,353+** picks tracked | **59.6%** win rate | **10** lenders scraped daily | **20+** autonomous agents | **7** platform users | **12** analysis models | **5** live systems | **11** open-source repos
 
 ---
 
@@ -25,7 +20,12 @@ I built a multi-sport prediction platform with 12 analysis agents that independe
 |---------|---------------------|-------|
 | **Sports Betting MCP Server** | Published Python package to PyPI. Serves real-time sports analytics to AI agents via the Model Context Protocol. 9 tools, documented track record. | [GitHub](https://github.com/seang1121/sports-betting-mcp) / [PyPI](https://pypi.org/project/sports-betting-mcp/) |
 | **March Madness Predictor** | 5-model ensemble with Monte Carlo simulation. Backtested against 14 tournaments (882 games). 77% accuracy, outperforms chalk by 26 pts/year. | [GitHub](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis) |
-| **Polymarket Trading Bot** | Autonomous arbitrage between sharp sportsbook odds and soft prediction market prices. Kelly criterion sizing, 6 sports, 3 execution modes. | [GitHub](https://github.com/seang1121/henchmen-trader) 
+| **Polymarket Trading Bot** | Autonomous arbitrage between sharp sportsbook odds and soft prediction market prices. Kelly criterion sizing, 6 sports, 3 execution modes. | [GitHub](https://github.com/seang1121/henchmen-trader) |
+
+## Data Aggregation & Scoring
+
+| Project | What It Demonstrates | Links |
+|---------|---------------------|-------|
 | **Fishing Report Analyzer** | Aggregates 7 free APIs (NOAA, NWS, Solunar) to score 9 fishing spots with a 100-point Go/No-Go system. Zero dependencies, zero API keys. | [GitHub](https://github.com/seang1121/Fishing-Report-Analyzer) |
 
 ## Full-Stack Applications
@@ -47,7 +47,7 @@ Everything runs itself because of [OpenClaw](https://openclaw.ai) — an AI oper
 | Project | What It Demonstrates | Links |
 |---------|---------------------|-------|
 | **AI Business Agents** | Plug-and-play website integrator: 6 AI agents handle leads, scheduling, invoicing, reviews, and marketing for any industry. One config file adapts tone, pricing, and behavior. | [GitHub](https://github.com/seang1121/ai-business-with-automated-agents) / [Live Demo](https://seang1121.github.io/ai-business-with-automated-agents) |
-| **Agent Command Center** | Discovery dashboard that auto-discovers all your automation and puts it in visulization for agents, MCP servers, hooks, cron jobs, and repos across your dev setup. Force-directed relationship graph. | [GitHub](https://github.com/seang1121/acc-agent-command-center) |
+| **Agent Command Center** | React dashboard that scans your system and visualizes every MCP server, agent, hook, cron job, and repo in one view. Auto-discovers config, zero manual setup. | [GitHub](https://github.com/seang1121/acc-agent-command-center) |
 ---
 ## Tech Stack
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -73,9 +73,9 @@ Everything runs itself because of [OpenClaw](https://openclaw.ai) — an AI oper
 
 ## Currently Building
 
-- MLB prediction models for the 2026 season (Opening Day target)
-- Expanding the MCP server ecosystem for sports and finance
-- Autonomous trading on Polymarket with real-time edge detection
+- MLB prediction models with 28 pitcher-specific edges — targeting Opening Day 2026
+- A mortgage rate MCP server so any AI agent can call `get_rates(zip_code)` and get live data
+- Paper-to-live migration on the Polymarket trading bot with real USDC execution
 
 ---
 
