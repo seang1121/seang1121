@@ -11,26 +11,26 @@ I don't have a CS degree. I have problems I refused to solve manually twice.
 I solve my own problems with code, then open-source them so you don't have to.
 
 ### Betting & Sports Analytics
-> I wanted better sports picks. So I built an ML platform with 12 analysis agents that runs across NBA, NHL, NCAAB, and MLB.
+> I wanted better sports picks. So I built an ML platform with 12 analysis agents that runs across NBA, NHL, NCAAB, and MLB. **Live at [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com)**
 
-| Project | What It Does | Stack |
+| Project | What It Does | Links |
 |---------|-------------|-------|
-| [**Sports Betting MCP**](https://github.com/seang1121/sports-betting-mcp) | The first MCP server for sports betting -- 9 tools, 59.6% win rate, 1,353+ picks | Python, MCP |
-| [**March Madness Predictor**](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis) | 5-model ensemble, 14-year backtest, 77% accuracy. Beats chalk by 26 pts/yr | TypeScript |
-| [**Henchmen Trader**](https://github.com/seang1121/henchmen-trader) | Autonomous Polymarket bot -- exploits sportsbook-vs-crowd mispricings | Python, Flask |
+| **Sports Betting MCP** | The first MCP server for sports betting -- 9 tools, 59.6% win rate, 1,353+ picks | [GitHub](https://github.com/seang1121/sports-betting-mcp) -- [PyPI](https://pypi.org/project/sports-betting-mcp/) |
+| **March Madness Predictor** | 5-model ensemble, 14-year backtest, 77% accuracy. Beats chalk by 26 pts/yr | [GitHub](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis) |
+| **Henchmen Trader** | Autonomous Polymarket bot -- exploits sportsbook-vs-crowd mispricings | [GitHub](https://github.com/seang1121/henchmen-trader) |
 
 ### Finance & Mortgage Tools
 > I work in sales in the mortgage/finance space. These tools save me hours every week and they'll save you hours too.
 
-| Project | What It Does | Stack |
+| Project | What It Does | Links |
 |---------|-------------|-------|
-| [**Mortgage Rate Lookup**](https://github.com/seang1121/Multi-Lender-Mortgage-Rate-Lookup) | One command, 10 lenders ranked best to worst. Beats anti-bot detection | Python, Patchright |
-| [**Daily Rate Reports**](https://github.com/seang1121/OpenClaw-Mortgage-Interest-Rates-Report) | Automated daily mortgage rates delivered to Discord -- set up once, never check again | Python, OpenClaw |
-| [**Investment Command Center**](https://github.com/seang1121/investment-command-center) | Monte Carlo simulation, Markowitz optimization, 12 AI analyzers | TypeScript, Python, Next.js |
-| [**CD Ladder Analyzer**](https://github.com/seang1121/CD-Ladder-Analyzer) | Compare CD rates and ladder strategies across 6 institutions | Python, GitHub Pages |
+| **Mortgage Rate Lookup** | One command, 10 lenders ranked best to worst. Beats anti-bot detection | [GitHub](https://github.com/seang1121/Multi-Lender-Mortgage-Rate-Lookup) |
+| **Daily Rate Reports** | Automated daily mortgage rates delivered to Discord -- set up once, never check again | [GitHub](https://github.com/seang1121/OpenClaw-Mortgage-Interest-Rates-Report) |
+| **Investment Command Center** | Monte Carlo simulation, Markowitz optimization, 12 AI analyzers | [GitHub](https://github.com/seang1121/investment-command-center) |
+| **CD Ladder Analyzer** | Compare CD rates and ladder strategies across 6 institutions | [GitHub](https://github.com/seang1121/CD-Ladder-Analyzer) -- [Live Demo](https://seang1121.github.io/CD-Ladder-Analyzer/) |
 
-### Henchmen -- My Autonomous AI Operator
-> Everything above runs itself because of this. Henchmen is an autonomous AI operator built on [OpenClaw](https://openclaw.ai) that orchestrates my entire ecosystem -- 24/7, zero manual intervention.
+### OpenClaw + Henchmen -- My Autonomous AI Operator
+> Everything above runs itself because of [OpenClaw](https://openclaw.ai). OpenClaw is an AI operator that can browse the web, manage files, run scripts, and make decisions like a human. **Henchmen** is what I built on top of it -- a 4-layer autonomous system that orchestrates my entire ecosystem 24/7 with zero manual intervention.
 
 ```
                 Morning Briefing (7 AM)
@@ -52,21 +52,21 @@ I solve my own problems with code, then open-source them so you don't have to.
 - Validators -- PII guard blocks personal info before any public output, threat detector catches prompt injection, pick validator enforces betting rules as code
 - Memory system -- structured by topic (patterns, anti-patterns, systems), not date dumps
 
-**Why OpenClaw:** I needed something that could operate a computer like a human -- browse the web, manage files, run scripts, and make decisions. OpenClaw gave me that. I built the 4-layer architecture (Identity, State, Knowledge, Operations) on top of it so every file has exactly one job and the system can reason about itself.
+**OpenClaw** is the foundation -- the AI operator that can control a computer. **Henchmen** is the architecture I built on top: Identity (who it is), State (what's happening now), Knowledge (what it's learned), and Operations (how it acts). Every file has exactly one job, and the system can reason about itself.
 
 ### AI Agents & Automation
 > I believe one person with the right agents can run what used to take a team. These tools prove it.
 
-| Project | What It Does | Stack |
+| Project | What It Does | Links |
 |---------|-------------|-------|
-| [**AI Business Agents**](https://github.com/seang1121/ai-business-with-automated-agents) | Run a business with 6 AI agents -- one config file, any industry. [Live demo](https://seang1121.github.io/ai-business-with-automated-agents) | Python, Flask |
-| [**Agent Command Center**](https://github.com/seang1121/acc-agent-command-center) | Dashboard that auto-discovers your MCP servers, agents, hooks, and cron jobs | TypeScript, React |
+| **AI Business Agents** | Run a business with 6 AI agents -- one config file, any industry | [GitHub](https://github.com/seang1121/ai-business-with-automated-agents) -- [Live Demo](https://seang1121.github.io/ai-business-with-automated-agents) |
+| **Agent Command Center** | Dashboard that auto-discovers your MCP servers, agents, hooks, and cron jobs | [GitHub](https://github.com/seang1121/acc-agent-command-center) |
 
 ### Everything Else
-| Project | What It Does |
-|---------|-------------|
-| [**Fishing Report Analyzer**](https://github.com/seang1121/Fishing-Report-Analyzer) | 7 free APIs, 9 spots ranked, Go/No-Go score for Jacksonville ICW fishing |
-| [**NMLS Exam Prep**](https://github.com/seang1121/Loan-Officer-Exam-Prep-Study-Guide) | Built my own study system to pass the mortgage loan originator exam |
+| Project | What It Does | Links |
+|---------|-------------|-------|
+| **Fishing Report Analyzer** | 7 free APIs, 9 spots ranked, Go/No-Go score for Jacksonville ICW fishing | [GitHub](https://github.com/seang1121/Fishing-Report-Analyzer) |
+| **NMLS Exam Prep** | Built my own study system to pass the mortgage loan originator exam | [GitHub](https://github.com/seang1121/Loan-Officer-Exam-Prep-Study-Guide) |
 
 ---
 
@@ -129,8 +129,11 @@ If you're in sales, finance, or any non-technical field -- **you can do this too
 
 ## Let's Connect
 
-- **Live platform:** [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com)
+- **Betting AI Platform:** [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com)
+- **AI Operator:** [OpenClaw](https://openclaw.ai) -- the foundation Henchmen runs on
 - **Social:** [Moltbook @HenchmenAI](https://www.moltbook.com/u/henchmenai)
+- **CD Ladder Tool:** [seang1121.github.io/CD-Ladder-Analyzer](https://seang1121.github.io/CD-Ladder-Analyzer/)
+- **AI Business Demo:** [seang1121.github.io/ai-business-with-automated-agents](https://seang1121.github.io/ai-business-with-automated-agents)
 
 ---
 
