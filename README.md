@@ -1,85 +1,58 @@
-# Hey, I'm Sean
+# Sean Goudy
 
-**Sales professional by day. Self-taught engineer by obsession.** I got tired of doing repetitive tasks manually, so I started building systems to do them for me. Now I have 20+ autonomous agents, 12 schedulers, and 11 cron jobs running 24/7 while I work my day job.
+**I work in sales. I build production software.** I started coding because I got tired of doing the same tasks manually every day — comparing mortgage rates, researching sports bets, tracking investments. Now I operate 20+ autonomous agents, 12 schedulers, and 11 cron jobs across 5 domains, all running 24/7 while I work my day job in finance.
 
-I don't have a CS degree. I have problems I refused to solve manually twice.
-
----
-
-## What I Build
-
-I solve my own problems with code, then open-source them so you don't have to.
-
-### Betting & Sports Analytics
-> I wanted better sports picks. So I built an ML platform with 12 analysis agents that runs across NBA, NHL, NCAAB, and MLB. **Live at [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com)**
-
-| Project | What It Does | Links |
-|---------|-------------|-------|
-| **Sports Betting MCP** | The first MCP server for sports betting -- 9 tools, 59.6% win rate, 1,353+ picks | [GitHub](https://github.com/seang1121/sports-betting-mcp) -- [PyPI](https://pypi.org/project/sports-betting-mcp/) |
-| **March Madness Predictor** | 5-model ensemble, 14-year backtest, 77% accuracy. Beats chalk by 26 pts/yr | [GitHub](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis) |
-| **Henchmen Trader** | Autonomous Polymarket bot -- exploits sportsbook-vs-crowd mispricings | [GitHub](https://github.com/seang1121/henchmen-trader) |
-
-### Finance & Mortgage Tools
-> I work in sales in the mortgage/finance space. These tools save me hours every week and they'll save you hours too.
-
-| Project | What It Does | Links |
-|---------|-------------|-------|
-| **Mortgage Rate Lookup** | One command, 10 lenders ranked best to worst. Beats anti-bot detection | [GitHub](https://github.com/seang1121/Multi-Lender-Mortgage-Rate-Lookup) |
-| **Daily Rate Reports** | Automated daily mortgage rates delivered to Discord -- set up once, never check again | [GitHub](https://github.com/seang1121/OpenClaw-Mortgage-Interest-Rates-Report) |
-| **Investment Command Center** | Monte Carlo simulation, Markowitz optimization, 12 AI analyzers | [GitHub](https://github.com/seang1121/investment-command-center) |
-| **CD Ladder Analyzer** | Compare CD rates and ladder strategies across 6 institutions | [GitHub](https://github.com/seang1121/CD-Ladder-Analyzer) -- [Live Demo](https://seang1121.github.io/CD-Ladder-Analyzer/) |
-
-### OpenClaw + Henchmen -- My Autonomous AI Operator
-> Everything above runs itself because of [OpenClaw](https://openclaw.ai). OpenClaw is an AI operator that can browse the web, manage files, run scripts, and make decisions like a human. **Henchmen** is what I built on top of it -- a 4-layer autonomous system that orchestrates my entire ecosystem 24/7 with zero manual intervention.
-
-```
-                Morning Briefing (7 AM)
-                     |
-  Injury Monitor --> Betting Analyzer --> AI Picks --> Discord
-  (5 AM / 5 PM)     (12 agents)         (2:30 PM)    (auto-posted)
-                          |
-                     ML Learning <-- Auto-Resolver (nightly)
-                          |
-  Mortgage Scraper ------+----- Fishing Report (sunrise)
-  (daily, 10 lenders)    |
-                    Evening Summary (11 PM)
-```
-
-**What it manages autonomously:**
-- 28 cron jobs -- morning briefings, sports picks, fishing reports, mortgage rates, evening summaries
-- Self-healing -- detects crashed processes, restarts services, diagnoses gateway issues
-- Brain database -- 6 SQLite tables tracking picks, patterns, trades, and auto-extracted learnings
-- Validators -- PII guard blocks personal info before any public output, threat detector catches prompt injection, pick validator enforces betting rules as code
-- Memory system -- structured by topic (patterns, anti-patterns, systems), not date dumps
-
-**OpenClaw** is the foundation -- the AI operator that can control a computer. **Henchmen** is the architecture I built on top: Identity (who it is), State (what's happening now), Knowledge (what it's learned), and Operations (how it acts). Every file has exactly one job, and the system can reason about itself.
-
-### AI Agents & Automation
-> I believe one person with the right agents can run what used to take a team. These tools prove it.
-
-| Project | What It Does | Links |
-|---------|-------------|-------|
-| **AI Business Agents** | Run a business with 6 AI agents -- one config file, any industry | [GitHub](https://github.com/seang1121/ai-business-with-automated-agents) -- [Live Demo](https://seang1121.github.io/ai-business-with-automated-agents) |
-| **Agent Command Center** | Dashboard that auto-discovers your MCP servers, agents, hooks, and cron jobs | [GitHub](https://github.com/seang1121/acc-agent-command-center) |
-
-### Everything Else
-| Project | What It Does | Links |
-|---------|-------------|-------|
-| **Fishing Report Analyzer** | 7 free APIs, 9 spots ranked, Go/No-Go score for Jacksonville ICW fishing | [GitHub](https://github.com/seang1121/Fishing-Report-Analyzer) |
-| **NMLS Exam Prep** | Built my own study system to pass the mortgage loan originator exam | [GitHub](https://github.com/seang1121/Loan-Officer-Exam-Prep-Study-Guide) |
+Every project here started as a real problem I had. If you have the same problem, it's yours — open source, documented, and ready to run.
 
 ---
 
-## The Sales + Code Playbook
+## By the Numbers
 
-Most people think sales and engineering are different worlds. I think they're the same skill applied differently:
+| | |
+|---|---|
+| **1,353+** picks tracked | **59.6%** documented win rate |
+| **10** lenders scraped daily | **20+** autonomous agents |
+| **7** concurrent platform users | **12** sports analysis models |
+| **5** live production systems | **9** published open-source repos |
 
-- **Mortgage rates are hard to compare?** I built a scraper that checks 10 lenders in 30 seconds
-- **Sports picks take hours of research?** I built 12 AI agents that do it in parallel
-- **Small businesses can't afford a marketing team?** I built 6 AI agents that handle leads, scheduling, invoicing, and reviews for any industry
-- **Bracket pools are pure guesswork?** I built a 5-model ensemble backtested against 14 tournaments
+---
 
-If you're in sales, finance, or any non-technical field -- **you can do this too.** Every one of these projects started as "I wonder if I can automate this" and ended as a production system. Start with a problem you're tired of solving manually.
+## Production ML Systems
+
+I built a multi-sport prediction platform with 12 analysis agents that independently evaluate every game across NBA, NHL, NCAAB, and MLB — then reach consensus through weighted scoring. It serves 7 users, resolves bets automatically, and feeds outcomes back into the models nightly. **Live at [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com).**
+
+| Project | What It Demonstrates | Links |
+|---------|---------------------|-------|
+| **Sports Betting MCP Server** | Published Python package to PyPI. Serves real-time sports analytics to AI agents via the Model Context Protocol. 9 tools, documented track record. | [GitHub](https://github.com/seang1121/sports-betting-mcp) / [PyPI](https://pypi.org/project/sports-betting-mcp/) |
+| **March Madness Predictor** | 5-model ensemble with Monte Carlo simulation. Backtested against 14 tournaments (882 games). 77% accuracy, outperforms chalk by 26 pts/year. | [GitHub](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis) |
+| **Polymarket Trading Bot** | Autonomous arbitrage between sharp sportsbook odds and soft prediction market prices. Kelly criterion sizing, 6 sports, 3 execution modes. | [GitHub](https://github.com/seang1121/henchmen-trader) |
+
+## Full-Stack Applications
+
+These are the tools I use in my day job and personal finances. Each one replaced a manual process I was doing weekly.
+
+| Project | What It Demonstrates | Links |
+|---------|---------------------|-------|
+| **Mortgage Rate Comparison** | Stealth-browser scraper that defeats anti-bot protection on 10 major bank websites simultaneously. Async parallel execution, day-over-day tracking. | [GitHub](https://github.com/seang1121/Multi-Lender-Mortgage-Rate-Lookup) |
+| **Investment Command Center** | Next.js + FastAPI platform with Monte Carlo simulation (10K paths), Markowitz portfolio optimization, Gordon Growth valuation, and 5 stock scanners. | [GitHub](https://github.com/seang1121/investment-command-center) |
+| **Daily Rate Reports** | Automated mortgage rate delivery to Discord via OpenClaw. Set up once, runs daily, zero maintenance. | [GitHub](https://github.com/seang1121/OpenClaw-Mortgage-Interest-Rates-Report) |
+| **CD Ladder Analyzer** | Compare certificate of deposit rates and ladder strategies across 6 institutions. | [GitHub](https://github.com/seang1121/CD-Ladder-Analyzer) / [Live Demo](https://seang1121.github.io/CD-Ladder-Analyzer/) |
+| **NMLS Exam Prep** | Built a structured study system to pass the mortgage loan originator exam. 4 modes, 7-week plan, 120 practice questions. | [GitHub](https://github.com/seang1121/Loan-Officer-Exam-Prep-Study-Guide) |
+
+## Autonomous Agents & Orchestration
+
+Everything above runs itself because of [OpenClaw](https://openclaw.ai) — an AI operator that can browse the web, manage files, and make decisions like a human. I built **Henchmen** on top of it: a 4-layer autonomous architecture (Identity, State, Knowledge, Operations) that self-heals, learns from outcomes, and orchestrates 20+ agents across sports analytics, mortgage tracking, trading, and daily reporting — all without manual intervention.
+
+| Project | What It Demonstrates | Links |
+|---------|---------------------|-------|
+| **AI Business Agents** | Plug-and-play system: 6 AI agents handle leads, scheduling, invoicing, reviews, and marketing for any industry. One config file adapts tone, pricing, and behavior. | [GitHub](https://github.com/seang1121/ai-business-with-automated-agents) / [Live Demo](https://seang1121.github.io/ai-business-with-automated-agents) |
+| **Agent Command Center** | React dashboard that auto-discovers MCP servers, agents, hooks, cron jobs, and repos across your dev setup. Force-directed relationship graph. | [GitHub](https://github.com/seang1121/acc-agent-command-center) |
+
+## Developer Tools & Personal Projects
+
+| Project | What It Demonstrates | Links |
+|---------|---------------------|-------|
+| **Fishing Report Analyzer** | Aggregates 7 free APIs (NOAA, NWS, Solunar) to score 9 fishing spots with a 100-point Go/No-Go system. Zero dependencies, zero API keys. | [GitHub](https://github.com/seang1121/Fishing-Report-Analyzer) |
 
 ---
 
@@ -100,41 +73,22 @@ If you're in sales, finance, or any non-technical field -- **you can do this too
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Shell](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 
----
-
-## GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=seang1121&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
-</p>
-
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=seang1121&layout=compact&theme=tokyonight&hide_border=true&langs_count=10" alt="Top Languages" />
 </p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=seang1121&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
-</p>
+---
+
+## Currently Building
+
+- MLB prediction models for the 2026 season (Opening Day target)
+- Expanding the MCP server ecosystem for sports and finance
+- Autonomous trading on Polymarket with real-time edge detection
 
 ---
 
-## Currently
+## Links
 
-- Building MLB prediction models for Opening Day 2026
-- Expanding the MCP server ecosystem for sports analytics
-- Trading on Polymarket with autonomous edge detection
-- Tracking mortgage rates daily across 10 lenders for my sales work
-
----
-
-## Let's Connect
-
-- **Betting AI Platform:** [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com)
-- **AI Operator:** [OpenClaw](https://openclaw.ai) -- the foundation Henchmen runs on
-- **Social:** [Moltbook @HenchmenAI](https://www.moltbook.com/u/henchmenai)
-- **CD Ladder Tool:** [seang1121.github.io/CD-Ladder-Analyzer](https://seang1121.github.io/CD-Ladder-Analyzer/)
-- **AI Business Demo:** [seang1121.github.io/ai-business-with-automated-agents](https://seang1121.github.io/ai-business-with-automated-agents)
-
----
-
-*Sales professional. Self-taught engineer. Building the systems that do the boring stuff so I don't have to.*
+- [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com) — Live betting analysis platform
+- [OpenClaw](https://openclaw.ai) — The AI operator foundation my systems run on
+- [Moltbook @HenchmenAI](https://www.moltbook.com/u/henchmenai) — Sports analysis posts
