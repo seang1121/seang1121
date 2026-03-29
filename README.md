@@ -19,13 +19,14 @@ Every project here started as a real problem I had. If you have the same problem
 
 ## Production Machine Learning Systems
 
-I built a multi-sport prediction platform with 12 analysis agents that independently evaluate every game across NBA, NHL, NCAAB, and MLB — then reach consensus through weighted scoring. It serves 7 users, resolves bets automatically, and feeds outcomes back into the models nightly. **Live at [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com).**
+I built a multi-sport prediction platform with 12 analysis agents that independently evaluate every game across NBA, NHL, NCAAB, and MLB — then reach consensus through weighted scoring. It serves agents with an API key and multiple users, resolves bets automatically, and feeds outcomes back into the models nightly. **Live at [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com).**
 
 | Project | What It Demonstrates | Links |
 |---------|---------------------|-------|
 | **Sports Betting MCP Server** | Published Python package to PyPI. Serves real-time sports analytics to AI agents via the Model Context Protocol. 9 tools, documented track record. | [GitHub](https://github.com/seang1121/sports-betting-mcp) / [PyPI](https://pypi.org/project/sports-betting-mcp/) |
 | **March Madness Predictor** | 5-model ensemble with Monte Carlo simulation. Backtested against 14 tournaments (882 games). 77% accuracy, outperforms chalk by 26 pts/year. | [GitHub](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis) |
-| **Polymarket Trading Bot** | Autonomous arbitrage between sharp sportsbook odds and soft prediction market prices. Kelly criterion sizing, 6 sports, 3 execution modes. | [GitHub](https://github.com/seang1121/henchmen-trader) |
+| **Polymarket Trading Bot** | Autonomous arbitrage between sharp sportsbook odds and soft prediction market prices. Kelly criterion sizing, 6 sports, 3 execution modes. | [GitHub](https://github.com/seang1121/henchmen-trader) 
+| **Fishing Report Analyzer** | Aggregates 7 free APIs (NOAA, NWS, Solunar) to score 9 fishing spots with a 100-point Go/No-Go system. Zero dependencies, zero API keys. | [GitHub](https://github.com/seang1121/Fishing-Report-Analyzer) |
 
 ## Full-Stack Applications
 
@@ -41,23 +42,14 @@ These are the tools I use in my day job and personal finances. Each one replaced
 
 ## Autonomous Agents & Orchestration
 
-Everything above runs itself because of [OpenClaw](https://openclaw.ai) — an AI operator that can browse the web, manage files, and make decisions like a human. I built **Henchmen** on top of it: a 4-layer autonomous architecture (Identity, State, Knowledge, Operations) that self-heals, learns from outcomes, and orchestrates 20+ agents across sports analytics, mortgage tracking, trading, and daily reporting — all without manual intervention.
+Everything runs itself because of [OpenClaw](https://openclaw.ai) — an AI operator that can browse the web, manage files, and make decisions like a human. I built **Henchmen** on top of it: a 4-layer autonomous architecture (Identity, State, Knowledge, Operations) that self-heals, learns from outcomes, and orchestrates 20+ agents across sports analytics, mortgage tracking, trading, and daily reporting — all without manual intervention.
 
 | Project | What It Demonstrates | Links |
 |---------|---------------------|-------|
-| **AI Business Agents** | Plug-and-play system: 6 AI agents handle leads, scheduling, invoicing, reviews, and marketing for any industry. One config file adapts tone, pricing, and behavior. | [GitHub](https://github.com/seang1121/ai-business-with-automated-agents) / [Live Demo](https://seang1121.github.io/ai-business-with-automated-agents) |
-| **Agent Command Center** | React dashboard that auto-discovers MCP servers, agents, hooks, cron jobs, and repos across your dev setup. Force-directed relationship graph. | [GitHub](https://github.com/seang1121/acc-agent-command-center) |
-
-## Developer Tools & Personal Projects
-
-| Project | What It Demonstrates | Links |
-|---------|---------------------|-------|
-| **Fishing Report Analyzer** | Aggregates 7 free APIs (NOAA, NWS, Solunar) to score 9 fishing spots with a 100-point Go/No-Go system. Zero dependencies, zero API keys. | [GitHub](https://github.com/seang1121/Fishing-Report-Analyzer) |
-
+| **AI Business Agents** | Plug-and-play website integrator: 6 AI agents handle leads, scheduling, invoicing, reviews, and marketing for any industry. One config file adapts tone, pricing, and behavior. | [GitHub](https://github.com/seang1121/ai-business-with-automated-agents) / [Live Demo](https://seang1121.github.io/ai-business-with-automated-agents) |
+| **Agent Command Center** | Discovery dashboard that auto-discovers all your automation and puts it in visulization for agents, MCP servers, hooks, cron jobs, and repos across your dev setup. Force-directed relationship graph. | [GitHub](https://github.com/seang1121/acc-agent-command-center) |
 ---
-
 ## Tech Stack
-
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
