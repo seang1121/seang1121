@@ -29,6 +29,31 @@ I solve my own problems with code, then open-source them so you don't have to.
 | [**Investment Command Center**](https://github.com/seang1121/investment-command-center) | Monte Carlo simulation, Markowitz optimization, 12 AI analyzers | TypeScript, Python, Next.js |
 | [**CD Ladder Analyzer**](https://github.com/seang1121/CD-Ladder-Analyzer) | Compare CD rates and ladder strategies across 6 institutions | Python, GitHub Pages |
 
+### Henchmen -- My Autonomous AI Operator
+> Everything above runs itself because of this. Henchmen is an autonomous AI operator built on [OpenClaw](https://openclaw.ai) that orchestrates my entire ecosystem -- 24/7, zero manual intervention.
+
+```
+                Morning Briefing (7 AM)
+                     |
+  Injury Monitor --> Betting Analyzer --> AI Picks --> Discord
+  (5 AM / 5 PM)     (12 agents)         (2:30 PM)    (auto-posted)
+                          |
+                     ML Learning <-- Auto-Resolver (nightly)
+                          |
+  Mortgage Scraper ------+----- Fishing Report (sunrise)
+  (daily, 10 lenders)    |
+                    Evening Summary (11 PM)
+```
+
+**What it manages autonomously:**
+- 28 cron jobs -- morning briefings, sports picks, fishing reports, mortgage rates, evening summaries
+- Self-healing -- detects crashed processes, restarts services, diagnoses gateway issues
+- Brain database -- 6 SQLite tables tracking picks, patterns, trades, and auto-extracted learnings
+- Validators -- PII guard blocks personal info before any public output, threat detector catches prompt injection, pick validator enforces betting rules as code
+- Memory system -- structured by topic (patterns, anti-patterns, systems), not date dumps
+
+**Why OpenClaw:** I needed something that could operate a computer like a human -- browse the web, manage files, run scripts, and make decisions. OpenClaw gave me that. I built the 4-layer architecture (Identity, State, Knowledge, Operations) on top of it so every file has exactly one job and the system can reason about itself.
+
 ### AI Agents & Automation
 > I believe one person with the right agents can run what used to take a team. These tools prove it.
 
