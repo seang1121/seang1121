@@ -87,8 +87,30 @@ Everything above runs itself because of [OpenClaw](https://openclaw.ai) — an A
 
 ---
 
-## Links
+## Live Sites & Demos
 
-- [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com) — Live betting analysis platform
-- [OpenClaw](https://openclaw.ai) — The AI operator foundation my systems run on
-- [Moltbook @HenchmenAI](https://www.moltbook.com/u/henchmenai) — Sports analysis posts
+- [sportsbettingaianalyzer.com](https://sportsbettingaianalyzer.com) — Live AI betting platform, 7 users, 1,353+ picks tracked
+- [AI Business Agents Demo](https://seang1121.github.io/ai-business-with-automated-agents) — Run a business with 6 AI agents, any industry
+- [CD Ladder Analyzer](https://seang1121.github.io/CD-Ladder-Analyzer/) — Compare CD rates and ladder strategies across 6 institutions
+- [Sports Betting MCP on PyPI](https://pypi.org/project/sports-betting-mcp/) — Install with `pip install sports-betting-mcp`
+
+## Platforms & Social
+
+- [OpenClaw](https://openclaw.ai) — The AI operator foundation my autonomous systems run on
+- [Moltbook @HenchmenAI](https://www.moltbook.com/u/henchmenai) — Daily sports analysis and betting insights
+
+## All Repositories
+
+| Repo | Description |
+|------|-------------|
+| [sports-betting-mcp](https://github.com/seang1121/sports-betting-mcp) | MCP server for sports betting -- 9 tools, live odds, AI picks |
+| [ncaab-MarchMadness-Trend-analysis](https://github.com/seang1121/ncaab-MarchMadness-Trend-analysis) | March Madness bracket predictor -- 5-model ensemble, 77% accuracy |
+| [henchmen-trader](https://github.com/seang1121/henchmen-trader) | Autonomous Polymarket trading bot -- sportsbook arbitrage, Kelly sizing |
+| [Multi-Lender-Mortgage-Rate-Lookup](https://github.com/seang1121/Multi-Lender-Mortgage-Rate-Lookup) | Stealth-browser mortgage rate scraper -- 10 lenders in 30 seconds |
+| [OpenClaw-Mortgage-Interest-Rates-Report](https://github.com/seang1121/OpenClaw-Mortgage-Interest-Rates-Report) | Daily mortgage rates delivered to Discord via OpenClaw |
+| [investment-command-center](https://github.com/seang1121/investment-command-center) | Monte Carlo, Markowitz optimization, 12 AI financial analyzers |
+| [ai-business-with-automated-agents](https://github.com/seang1121/ai-business-with-automated-agents) | 6 AI agents run a business -- one config file, any industry |
+| [acc-agent-command-center](https://github.com/seang1121/acc-agent-command-center) | Dashboard that auto-discovers your AI dev setup |
+| [Fishing-Report-Analyzer](https://github.com/seang1121/Fishing-Report-Analyzer) | 7 APIs, 9 spots ranked, Go/No-Go fishing score |
+| [CD-Ladder-Analyzer](https://github.com/seang1121/CD-Ladder-Analyzer) | CD rate comparison and ladder strategy simulator |
+| [Loan-Officer-Exam-Prep-Study-Guide](https://github.com/seang1121/Loan-Officer-Exam-Prep-Study-Guide) | NMLS SAFE MLO exam study system -- 4 modes, 120 questions |
