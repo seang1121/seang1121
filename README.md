@@ -1,8 +1,8 @@
 # Sean Goudy
 
-**I work in sales. I build production software.** I started coding because I got tired of doing the same tasks manually every day — comparing mortgage rates, researching sports bets, tracking investments. Now I operate 20+ autonomous agents, 12 schedulers, and 11 cron jobs across 5 domains, all running 24/7 while I work my day job in finance.
+I love solving problems — and I use AI to do it. Every repo here started because I had a real challenge in my day-to-day: comparing mortgage rates across 17 lenders, analyzing thousands of sports bets, managing investments, automating repetitive tasks. Instead of doing it by hand, I built systems that handle it for me.
 
-Every project here started as a real problem I had. If you have the same problem, it's yours — open source, documented, and ready to run.
+Now I run 20+ autonomous agents, 2 MCP servers on PyPI, and multiple live platforms — all powered by AI, all open source. If you've got the same problem, it's yours.
 
 ---
 
