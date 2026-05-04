@@ -1,5 +1,3 @@
-# Sean Goudy
-
 I love solving problems — and I use AI to do it. Every repo here started because I had a real challenge in my day-to-day: comparing mortgage rates across 17 lenders, analyzing thousands of sports bets, managing investments, automating repetitive tasks. Instead of doing it by hand, I built systems that handle it for me.
 
 Now I run 20+ autonomous agents, 2 MCP servers on PyPI, and multiple live platforms — all powered by AI, all open source. If you've got the same problem, it's yours.
